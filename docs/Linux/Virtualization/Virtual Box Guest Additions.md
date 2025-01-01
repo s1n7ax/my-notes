@@ -1,0 +1,1 @@
+Guest additions can be downloaded from https://download.virtualbox.org/virtualbox/

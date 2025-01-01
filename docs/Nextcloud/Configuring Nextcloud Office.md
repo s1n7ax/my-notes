@@ -1,0 +1,5 @@
+- Search for `Collabora Online - Built-in CODE Server (ARM64)` in App store
+- Click on `Download and Enable`
+- Now go to `Personal Settings`
+- Select `Nextcloud Office` from the navigation menu
+- Check `Use the built-in CODE - Collabora Online Development Edition` radio button
