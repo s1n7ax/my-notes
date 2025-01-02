@@ -19,12 +19,17 @@ author: By Srinesh Nisala
 
 > Continuous integration is a DevOps software development practice where developers regularly merge their code changes into a central repository, after which automated builds and tests are run. Continuous integration most often refers to the build or integration stage of the software release process and entails both an automation component (e.g. a CI or build service) and a cultural component (e.g. learning to integrate frequently)
 
-> [!TIP]
-> Break the big tasks to smaller sub tasks
-> More automated less manual
+:::tip
+Break the big tasks to smaller sub tasks
+:::
 
-> [!TIP]
-> The term `job` is used for a small unit of work while `pipeline` is a sequence of `jobs` in a specific order
+:::tip
+More automated less manual
+:::
+
+:::tip
+The term `job` is used for a small unit of work while `pipeline` is a sequence of `jobs` in a specific order
+:::
 
 ---
 
