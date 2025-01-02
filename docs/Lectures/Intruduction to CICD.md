@@ -20,14 +20,6 @@ author: By Srinesh Nisala
 > Continuous integration is a DevOps software development practice where developers regularly merge their code changes into a central repository, after which automated builds and tests are run. Continuous integration most often refers to the build or integration stage of the software release process and entails both an automation component (e.g. a CI or build service) and a cultural component (e.g. learning to integrate frequently)
 
 :::tip
-Break the big tasks to smaller sub tasks
-:::
-
-:::tip
-More automated less manual
-:::
-
-:::tip
 The term `job` is used for a small unit of work while `pipeline` is a sequence of `jobs` in a specific order
 :::
 
@@ -89,7 +81,19 @@ The term `job` is used for a small unit of work while `pipeline` is a sequence o
 
 ---
 
-# Demo
+## Examples
+
+### Supabase docker image release
+
+[source](https://github.com/supabase/supabase/blob/2d1783ab00c0cd672828257f33155e717e252161/.github/workflows/publish_image.yml#L94-L103)
+
+![](../assets/2025-01-02-21-22-14.png)
+
+### My website deployment
+
+[source](https://github.com/s1n7ax/my-website-ssr/blob/c69878402e6ad240d08165701cb2de98a3c0106b/.github/workflows/release.yml?plain=1#L23-L49)
+
+![](../assets/2025-01-02-20-45-20.png)
 
 ---
 
@@ -119,112 +123,33 @@ The term `job` is used for a small unit of work while `pipeline` is a sequence o
 - **GitHub Actions**: Native CI/CD for GitHub repositories.
 - **GitLab CI/CD**: Integrated tool for GitLab repositories.
 - **CircleCI**: Cloud-based CI/CD for fast pipeline setups.
-- **Travis CI**: Popular for open-source projects.
-
----
-
-# Building Your First CI/CD Pipeline
-
----
-
-## Step 1: Set Up a Repository
-
-- Create a GitHub repository for your project.
-- Add a sample codebase (e.g., a simple Python/JavaScript app).
-
----
-
-## Step 2: Write a Build Script
-
-- Example: For Python, create a `requirements.txt` and a `test.py` file.
-- `test.py`:
-
-```python
-def test_addition():
-    assert 1 + 1 == 2
-```
-
----
-
-## Step 3: Configure a CI/CD Tool
-
-- **Example:** GitHub Actions
-
-  - Add a `.github/workflows/main.yml` file:
-
-```yaml
-name: CI Pipeline
-
-on: [push, pull_request]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
-      - name: Set Up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.x"
-
-      - name: Install Dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Run Tests
-        run: pytest
-```
-
----
-
-## Step 4: Test the Pipeline
-
-- Push code to GitHub and watch the pipeline execute.
-- Fix any issues reported in the logs.
-
----
-
-## Step 5: Add Deployment
-
-- Use a service like AWS, Heroku, or Netlify for deploying the application.
 
 ---
 
 # Best Practices
 
-- Commit frequently to keep changes small and manageable.
-- Write clear and comprehensive tests.
-- Secure sensitive data with environment variables.
-- Monitor and analyze CI/CD pipelines for performance.
-- Regularly update and maintain the pipeline configuration.
+- Commit frequently to keep changes small and manageable
+- Write clear and comprehensive tests
+- Secure sensitive data with environment variables
+- Monitor and analyze CI/CD pipelines for performance
+- Regularly update and maintain the pipeline configuration
 
 ---
 
-# Practical Tips for Students
+# Tips for Students
 
-- Start with a simple CI/CD setup using GitHub Actions.
-- Explore Docker to containerize your applications.
-- Experiment with free-tier cloud services for deployment.
-- Collaborate with peers to understand team workflows.
-- Use public repositories to showcase your CI/CD knowledge.
+- Start with a simple CI/CD setup using GitHub Actions
+- Explore Docker to containerize your applications
+- Experiment with free-tier cloud services for deployment
 
 ---
-
-# Q&A
-
-- Open the floor for questions.
-- Suggested topics: Debugging pipelines, choosing tools, learning resources.
 
 # Career Path
 
 | Role                      | ELI5 Explanation                                                  |
 | ------------------------- | ----------------------------------------------------------------- |
 | System Administrator      | Do more maintainance work and make sure applications is available |
-| DevOps Engineer           | Build architecture to make sure everything running smoothly       |
+| DevOps Engineer           | Build architecture to make the integration process effortless     |
 | Site Reliability Engineer | Ensures the reliability, scalability, and performance             |
 
 ---
@@ -260,7 +185,7 @@ jobs:
 - Technical Skills
 
   - Proficiency in Linux/Unix administration.
-  - Knowledge of programming and scripting languages like Python, Bash, or Go.
+  - Knowledge of programming and scripting languages like Python, Bash.
   - Experience with version control systems, e.g., Git.
 
 - Cloud Platforms
@@ -275,3 +200,11 @@ jobs:
   - Monitoring tools (e.g., Nagios, Prometheus).
 
 ---
+
+# Resources
+
+---
+
+# Q&A
+
+- Open the floor for questions.
