@@ -203,6 +203,8 @@ The term `job` is used for a small unit of work while `pipeline` is a sequence o
 
 # Resources
 
+- [https://github.com/wmariuss/awesome-devops?tab=readme-ov-file#resources](https://github.com/wmariuss/awesome-devops?tab=readme-ov-file#resources)
+
 ---
 
 # Q&A
