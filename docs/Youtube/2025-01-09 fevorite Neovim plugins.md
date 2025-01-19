@@ -1,4 +1,4 @@
-# My favorite Neovim features and plugins
+# My favorite Neovim plugins
 
 <!-- incremental_lists: true -->
 
