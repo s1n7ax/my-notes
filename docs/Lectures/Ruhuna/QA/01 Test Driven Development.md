@@ -66,12 +66,23 @@ gradle test
 
 ## What is TDD?
 
+> Test-Driven Development (TDD) is a Software development method in which you write Automation Tests before the actual development process starts
+
 ![](../../../../assets/red-green-refactor.png)
 
-- Describe the behaviour, then implement
+Red-Green-Refactor:
+
+- Focus on testing behaviors (requirements) rather than implementation details.
+- Write minimal code to pass tests ("green"),
+- Refactor without adding new tests.
 
 ---
 
-## Random
+## TDD Best Practices
 
-- Do not test implementation details test behaviours
+---
+
+## More on TDD
+
+- [TDD, Where Did It All Go Wrong](https://www.youtube.com/watch?v=EZ05e7EMOLM)
+- [Jim Coplien and Bob Martin Debate TDD](https://www.youtube.com/watch?v=KtHQGs3zFAM)
