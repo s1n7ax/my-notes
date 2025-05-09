@@ -80,6 +80,10 @@ Red-Green-Refactor:
 
 ## TDD Best Practices
 
+- Reduce mocking and stubbing
+- Avoid testing private/internal code; focus on public interfaces
+- Avoid Over-Testing
+
 ---
 
 ## More on TDD
