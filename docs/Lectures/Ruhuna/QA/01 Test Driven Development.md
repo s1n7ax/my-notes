@@ -1,6 +1,6 @@
 # Test Driven Development
 
-by Srinesh Nisala
+by Srinesh Nisala (Senior Software Engineer @ iLabs)
 
 - LinkedIn: [https://www.linkedin.com/in/srinesh-nisala/](https://www.linkedin.com/in/srinesh-nisala/)
 - GitHub: [https://github.com/s1n7ax](https://github.com/s1n7ax)
@@ -31,9 +31,7 @@ gradle run
 
 ```shell
 # with gradle
-gradle test --info
-          # ^^^ by default stdout is not shown when running tests
-          # --info flag shows the output
+gradle test
 
 # with gradle wrapper
 ./gradlew test
@@ -67,6 +65,8 @@ gradle test --info
 ---
 
 ## What is TDD?
+
+![](../../../../assets/red-green-refactor.png)
 
 - Describe the behaviour, then implement
 
