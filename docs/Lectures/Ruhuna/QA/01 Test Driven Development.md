@@ -10,7 +10,7 @@ by Srinesh Nisala (Senior Software Engineer @ iLabs)
 ## Pre-requisites
 
 - Create a Github account
-- Get a fork of [https://github.com/s1n7ax/lecture_qa](https://github.com/s1n7ax/lecture_qa)
+- Get a fork of [https://github.com/s1n7ax/lecture-tdd](https://github.com/s1n7ax/lecture-tdd)
 - Open the project with Codespace
 
 ---
