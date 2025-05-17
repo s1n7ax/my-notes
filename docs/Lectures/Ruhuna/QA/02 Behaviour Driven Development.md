@@ -76,3 +76,8 @@ Scenario: eat 5 out of 12
 - **BDD vs. TDD:**
   - TDD: "Write tests first, then code." Focuses on code correctness.
   - BDD: "Define behavior first, then automate." Focuses on business value.
+
+### 4. References
+
+- [JS Tutorial](https://cucumber.io/docs/guides/10-minute-tutorial)
+- [Anti Patterns](https://cucumber.io/docs/guides/anti-patterns)
