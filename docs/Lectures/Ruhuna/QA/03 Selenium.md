@@ -94,8 +94,6 @@ WARNING: CDP support for Firefox is deprecated and will be removed in future ver
 
 ### WebDriver classic architecture
 
-<style scoped>img { width: 45%; }</style>
-
 ![webdriver classic architecture](assets/webdriver-classic-architecture.png)
 
 ### WebDriver BiDi architecture
@@ -153,23 +151,12 @@ browser = new FirefoxDriver(options);
 
 ## Step 3 - DemoQA form validation
 
-<style scoped>
-.cc {
-  display: grid;
-  grid-template-columns: 3fr 5fr;
-  gap: 1rem;
-  height: 50%;
-}
-</style>
-
 [changes](https://github.com/s1n7ax/lecture-intro-to-qa-automation/compare/step-2...step-3)
 
 - Manually check the website [https://demoqa.com/text-box](https://demoqa.com/text-box)
 - Inspect the element in the form and output
 - Capture the element to execute actions
 - Validate the data after submit
-
-<div class="cc">
 
 ```java
 @BeforeEach
@@ -201,8 +188,6 @@ assertTrue(acName.endsWith("Srinesh Nisala"));
 assertTrue(acEmail.endsWith("random@gmail.com"));
 ```
 
-</div>
-
 ---
 
 ## Common Exceptions
@@ -232,17 +217,6 @@ ELI5 description;
 ---
 
 - Create pages from form and form output
-
-<style scoped>
-.cc {
-  font-size:12px;
-}
-</style>
-
-<!-- column_layout: [1, 1] -->
-
-<!-- column: 0 -->
-<div class="cc">
 
 ```java
 public class DemoQATextboxPage {
@@ -293,17 +267,9 @@ public class DemoQATextboxOutputPage {
 }
 ```
 
-</div>
-
 ---
 
 # Step 5 - Data driven testing
-
-<style scoped>
-marp-pre {
-  font-size: 16px;
-}
-</style>
 
 [changes](https://github.com/s1n7ax/lecture-intro-to-qa-automation/compare/step-4...step-5)
 
