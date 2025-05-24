@@ -46,42 +46,7 @@ ELI5 description
 
 ---
 
-## Step 1 - Setting up Java project for test
-
-[changes](https://github.com/s1n7ax/lecture-intro-to-qa-automation/compare/main...step-1)
-
-- Create a new Java project
-
-```bash
-gradle init
-```
-
----
-
-## Step 2 - Google page load test
-
-[changes](https://github.com/s1n7ax/lecture-intro-to-qa-automation/compare/step-1...step-2)
-
-- Add selenium as dependency
-
-```groovy
-# app/build.gradle
-testImplementation 'org.seleniumhq.selenium:selenium-java:4.27.0'
-```
-
-- Add a sample test
-
-```java
-@Test
-void appHasAGreeting() {
-  var browser = new FirefoxDriver();
-  browser.get("https://www.google.com");
-
-  // this is the test
-  assertEquals(browser.getTitle(), "Google");
-  browser.close();
-}
-```
+## Simple Selenium Demo
 
 ---
 
@@ -122,7 +87,7 @@ browser = new FirefoxDriver(options);
 
 ---
 
-## (Off topic) Remove extensions
+## Remove extensions
 
 > [!NOTE]
 > While most Selenium commands are included in the specification, some things are browser specific
@@ -149,45 +114,6 @@ browser = new FirefoxDriver(options);
 
 ---
 
-## Step 3 - DemoQA form validation
-
-[changes](https://github.com/s1n7ax/lecture-intro-to-qa-automation/compare/step-2...step-3)
-
-- Manually check the website [https://demoqa.com/text-box](https://demoqa.com/text-box)
-- Inspect the element in the form and output
-- Capture the element to execute actions
-- Validate the data after submit
-
-```java
-@BeforeEach
-public void beforeEach() {
-  var options = new FirefoxOptions();
-  options.addArguments("--safe-mode");
-  options.setCapability("webSocketUrl", true);
-  browser = new FirefoxDriver(options);
-}
-```
-
-```java
-browser.get("https://demoqa.com/text-box");
-var pageHeader = browser.findElement(By.tagName("h1"));
-assertEquals(pageHeader.getText(), "Text Box");
-
-browser.findElement(By.id("userName")).sendKeys("Srinesh Nisala");
-browser.findElement(By.id("userEmail")).sendKeys("random@gmail.com");
-
-var submitBtn = browser.findElement(By.id("submit"));
-((JavascriptExecutor) browser).executeScript("arguments[0].scrollIntoView(true);", submitBtn);
-submitBtn.click();
-
-var output = browser.findElement(By.id("output"));
-var acName = output.findElement(By.id("name")).getText();
-var acEmail = output.findElement(By.id("email")).getText();
-
-assertTrue(acName.endsWith("Srinesh Nisala"));
-assertTrue(acEmail.endsWith("random@gmail.com"));
-```
-
 ---
 
 ## Common Exceptions
@@ -204,9 +130,7 @@ ELI5 description;
 
 ---
 
-## Step 4 - Page object model design pattern
-
-[changes](https://github.com/s1n7ax/lecture-intro-to-qa-automation/compare/step-3...step-4)
+## Page object model design pattern
 
 ### Why page object model
 
@@ -219,83 +143,26 @@ ELI5 description;
 - Create pages from form and form output
 
 ```java
-public class DemoQATextboxPage {
+public class Page {
   private WebDriver browser;
 
-  @FindBy(id = "userName")
-  private WebElement fullName;
+  @FindBy(id = "identifier")
+  private WebElement elementName;
 
-  @FindBy(id = "userEmail")
-  private WebElement email;
-
-  @FindBy(id = "submit")
-  private WebElement submit;
-
-  DemoQATextboxPage(WebDriver browser) {
+  Page(WebDriver browser) {
     this.browser = browser;
     PageFactory.initElements(browser, this);
   }
 
-  public void fillForm(String fullName, String email) {
-    this.fullName.sendKeys(fullName);
-    this.email.sendKeys(email);
-    ((JavascriptExecutor) this.browser).executeScript("arguments[0].scrollIntoView(true);", this.submit);
-    this.submit.click();
-  }
-}
-```
-
-<!-- column: 1 -->
-
-```java
-public class DemoQATextboxOutputPage {
-  @FindBy(id = "name")
-  private WebElement name;
-
-  @FindBy(id = "email")
-  private WebElement email;
-
-  DemoQATextboxOutputPage(WebDriver browser) {
-    var output = browser.findElement(By.id("output"));
-    PageFactory.initElements(output, this);
-  }
-
-  public void validateForm(String expFullName, String expEmail) {
-    assertTrue(this.name.getText().endsWith(expFullName));
-    assertTrue(this.email.getText().endsWith(expEmail));
+  public void doSomething(String value) {
+    this.elementName.sendKeys(value);
   }
 }
 ```
 
 ---
 
-# Step 5 - Data driven testing
-
-[changes](https://github.com/s1n7ax/lecture-intro-to-qa-automation/compare/step-4...step-5)
-
-Data-Driven Testing (DDT) is a software testing methodology in which test scripts execute a set of test cases using different sets of input data.
-
-> [!NOTE]
-> The following example demonstrates how to supply different data sets to tests, which is a crucial aspect of data-driven testing. However, it does not address handling varying scenarios based on the input data
-
-```java
-@ParameterizedTest
-@ValueSource(strings = { "Srinesh,srinesh@email.com", "Nisala,nisala@email.com" })
-void test(String detils) {
-  browser.get("https://demoqa.com/text-box");
-
-  var splitDetails = detils.split(",");
-  var fullName = splitDetails[0];
-  var email = splitDetails[1];
-
-  DemoQATextboxPage.init(browser).fillForm(fullName, email);
-  DemoQATextboxOutputPage.init(browser).validateForm(fullName, email);
-}
-```
-
----
-
-# Step 6 - Headless mode
+# Headless mode
 
 [changes](https://github.com/s1n7ax/lecture-intro-to-qa-automation/compare/step-5...step-6)
 
