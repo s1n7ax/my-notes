@@ -114,8 +114,6 @@ browser = new FirefoxDriver(options);
 
 ---
 
----
-
 ## Common Exceptions
 
 ELI5 description;
