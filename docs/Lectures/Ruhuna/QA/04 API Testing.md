@@ -14,6 +14,9 @@ By Srinesh Nisala
 - [xh](https://github.com/ducaale/xh/releases)
 - [Github account](https://github.com/)
 
+> [!NOTE] It's important to understand the basics of HTTP and RESTful than how
+> to use a specific tool.
+
 ---
 
 ## Website vs Web Service
@@ -27,7 +30,7 @@ By Srinesh Nisala
 
 ---
 
-## Demo
+## Exercise 1: HTTP Request and Response
 
 - Open a new browser tab
 - Open the network tab in the developer tools
@@ -35,6 +38,57 @@ By Srinesh Nisala
 - Observe the first network requests made by the browser
 
 ![Http Request Response](../../../../assets/http-request-response.png)
+
+---
+
+## Exercise 2: Calling a web service using HTTP
+
+- What is [json placeholder](https://jsonplaceholder.typicode.com/)?
+- Open network tab in the developer tools
+- Go to [https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts)
+- Observe the
+  - Response Data
+  - Response Status Code (<kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>r</kbd>` if you are getting 304)
+
+---
+
+## Exercise 3: Using other tools to call a web service
+
+- Open network tab in the developer tools
+- Go to [https://jsonplaceholder.typicode.com/posts/1](https://jsonplaceholder.typicode.com/posts/1)
+- Observe the response data
+- Use `xh` to make the same request `xh https://jsonplaceholder.typicode.com/posts/1`
+- Use Bruno to make the same request
+  - Create a new collection
+  - Create a new request
+  - Set the method to `GET`
+  - Set the URL to `https://jsonplaceholder.typicode.com/posts/1`
+  - Click on `Send`
+
+---
+
+## Exercise 4: Using Bruno to make a POST request
+
+- Create a new request
+- Set the method to `POST`
+- Set the URL to `https://jsonplaceholder.typicode.com/posts`
+- In the body tab, select `JSON` and enter the following JSON data:
+
+  ```json
+  {
+    "title": "foo",
+    "body": "bar",
+    "userId": 1
+  }
+  ```
+
+- Click on `Send`
+
+---
+
+## Exercise 5: Using REST Assured to make a GET/POST request
+
+- Open
 
 ---
 
