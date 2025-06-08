@@ -48,7 +48,7 @@ By Srinesh Nisala
 - Go to [https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts)
 - Observe the
   - Response Data
-  - Response Status Code (<kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>r</kbd>` if you are getting 304)
+  - Response Status Code (`ctrl` + `shift` + `r` if you are getting 304)
 
 ---
 
@@ -74,13 +74,13 @@ By Srinesh Nisala
 - Set the URL to `https://jsonplaceholder.typicode.com/posts`
 - In the body tab, select `JSON` and enter the following JSON data:
 
-  ```json
-  {
-    "title": "foo",
-    "body": "bar",
-    "userId": 1
-  }
-  ```
+```json
+{
+  "title": "foo",
+  "body": "bar",
+  "userId": 1
+}
+```
 
 - Click on `Send`
 
