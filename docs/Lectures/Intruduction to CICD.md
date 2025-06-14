@@ -6,12 +6,12 @@ author: By Srinesh Nisala
 # Agenda
 
 1. What is Continuous integration (CI)?
-1. What is Continuous Delivery/Deployment (CD)?
-1. Why CI/CD Matters
-1. Key Components of CI/CD
-1. Tools for CI/CD
-1. Career Path
-1. Q&A
+2. What is Continuous Delivery/Deployment (CD)?
+3. Why CI/CD Matters
+4. Key Components of CI/CD
+5. Tools for CI/CD
+6. Career Path
+7. Q&A
 
 ---
 
@@ -88,6 +88,8 @@ The term `job` is used for a small unit of work while `pipeline` is a sequence o
 [source](https://github.com/supabase/supabase/blob/2d1783ab00c0cd672828257f33155e717e252161/.github/workflows/publish_image.yml#L94-L103)
 
 ![](../assets/2025-01-02-21-22-14.png)
+
+---
 
 ### My website deployment
 
