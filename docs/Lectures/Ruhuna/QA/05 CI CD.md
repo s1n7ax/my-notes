@@ -7,7 +7,7 @@ By Srinesh Nisala
 
 ---
 
-## Exercise 1
+## Exercise
 
 ### Pre-requisites
 
