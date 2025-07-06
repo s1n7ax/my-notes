@@ -91,6 +91,9 @@ cd apache-jmeter-5.6.2/bin
 
 The Open Web Application Security Project (OWASP) Top 10 represents the most critical security risks:
 
+- [Top 10 Web Application Security Risks](https://owasp.org/www-project-top-ten/)
+- [Learn the hack - Stop the attack](https://owasp.org/www-project-webgoat/)
+
 ---
 
 #### 1. Broken Access Control
