@@ -3,7 +3,7 @@
 ```bash
 nix-env --list-generations
 
-nix-collect-garbage  --delete-old
+nix-collect-garbage --delete-old
 
 # this does not work
 nix-collect-garbage  --delete-generations 1 2 3
