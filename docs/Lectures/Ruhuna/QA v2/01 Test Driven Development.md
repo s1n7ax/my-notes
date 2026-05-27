@@ -1,21 +1,49 @@
 # Test Driven Development
 
-by Srinesh Nisala (Senior Software Engineer @ iLabs)
+By Srinesh Nisala
 
-- LinkedIn: [https://www.linkedin.com/in/srinesh-nisala/](https://www.linkedin.com/in/srinesh-nisala/)
-- GitHub: [https://github.com/s1n7ax](https://github.com/s1n7ax)
+- [LinkedIn](https://www.linkedin.com/in/srinesh-nisala/)
+- [GitHub](https://github.com/s1n7ax)
 
 ---
 
-## Pre-requisites
+## 1. Introduction to Vitest
 
-- Create a Github account
+**Objective:** Get familiar with Vitest as the testing framework.
+
+### Key Topics
+
+- **What is Vitest?**
+  - Fast unit testing framework built on top of Vite
+  - Compatible with Jest's API
+- **Core functions:**
+  - `describe()` — groups related tests
+  - `it()` — defines a single test case
+  - `expect()` — asserts an expected value
+
+```js
+describe('password', () => {
+  it('rejects short passwords', () => {
+    expect(validatePassword('abc')).toEqual({ valid: false })
+  })
+})
+```
+
+- Write a simple passing test to confirm the setup works
+
+---
+
+## 2. Hands-On Demo: Password Validator
+
+**Objective:** Build a password validator step by step using TDD.
+
+### Pre-requisites
+
+- Create a GitHub account
 - Get a fork of [https://github.com/s1n7ax/lecture-tdd-v2](https://github.com/s1n7ax/lecture-tdd-v2)
 - Open the project with Codespace
 
----
-
-## Project structure
+### Understanding the Project Structure
 
 - Explain how to run tests
 
@@ -23,16 +51,7 @@ by Srinesh Nisala (Senior Software Engineer @ iLabs)
 npm test
 ```
 
----
-
-## Basics of Vitest
-
-- Show what a test file looks like — `describe()`, `it()` and `expect()`
-- Write a simple passing test to confirm the setup works
-
----
-
-## Write all tests first
+### Write All Tests First
 
 - Create `password.js` and `password.test.js`
 - Write a test: short password returns `{ valid: false }`
@@ -42,30 +61,22 @@ npm test
 - Write a test: password with no special character returns `{ valid: false }`
 - Run all tests — show all RED
 
----
-
-## Exercise 1 — Minimum length
+### Exercise 1 — Minimum length
 
 - Implement minimum code: check `password.length >= 8`
 - Run tests — first two GREEN, rest still RED
 
----
-
-## Exercise 2 — Uppercase
+### Exercise 2 — Uppercase
 
 - Add the uppercase check (`/[A-Z]/`)
 - Run tests — show GREEN
 
----
-
-## Exercise 3 — Digit
+### Exercise 3 — Digit
 
 - Add the digit check (`/[0-9]/`)
 - Run tests — show GREEN
 
----
-
-## Exercise 4 — Special character
+### Exercise 4 — Special character
 
 - Add the special character check (`/[^a-zA-Z0-9]/`)
 - Run tests — all GREEN
@@ -73,44 +84,39 @@ npm test
 
 ---
 
-## What is TDD?
+## 3. Introduction to TDD
 
-> Test-Driven Development (TDD) is a Software development method in which you write Automation Tests before the actual development process starts
+**Objective:** Understand the philosophy and purpose of TDD.
+
+### Key Topics
+
+- **What is TDD?**
+  - Software development method where tests are written before the implementation
+  - Ensures every piece of code has a clear purpose — to make a failing test pass
+- **Red-Green-Refactor:**
+  - **Red:** Write a failing test
+  - **Green:** Write minimum code to make it pass
+  - **Refactor:** Improve the code without changing behaviour
 
 ![](../../../../assets/red-green-refactor.png)
 
-Red-Green-Refactor:
+- **Pros:**
+  - Tests act as living documentation — they show exactly what the code is supposed to do
+  - Gives confidence to refactor without breaking existing behaviour
+  - Forces you to think about the interface before the implementation
+- **Cons:**
+  - Hard to apply to UI, databases, and external APIs without extra tooling
+  - Can give false confidence if tests only cover happy paths
 
-- Focus on testing behaviors (requirements) rather than implementation details.
-- Write minimal code to pass tests ("green"),
-- Refactor without adding new tests.
-
----
-
-## Pros and Cons of TDD
-
-**Pros**
-
-- Tests act as living documentation — they show exactly what the code is supposed to do
-- Gives confidence to refactor without breaking existing behaviour
-- Forces you to think about the interface before the implementation
-
-**Cons**
-
-- Hard to apply to UI, databases, and external APIs without extra tooling
-- Can give false confidence if tests only cover happy paths
-
----
-
-## TDD Best Practices
+### Best Practices
 
 - Reduce mocking and stubbing
 - Avoid testing private/internal code; focus on public interfaces
-- Avoid Over-Testing
+- Avoid over-testing
 
 ---
 
-## More on TDD
+## 4. References
 
 - [TDD, Where Did It All Go Wrong](https://www.youtube.com/watch?v=EZ05e7EMOLM)
 - [Jim Coplien and Bob Martin Debate TDD](https://www.youtube.com/watch?v=KtHQGs3zFAM)
