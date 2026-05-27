@@ -96,12 +96,6 @@ npm test
   - Hard to apply to UI, databases, and external APIs without extra tooling
   - Can give false confidence if tests only cover happy paths
 
-### Best Practices
-
-- Reduce mocking and stubbing
-- Avoid testing private/internal code; focus on public interfaces
-- Avoid over-testing
-
 ### 4. References
 
 - [TDD, Where Did It All Go Wrong](https://www.youtube.com/watch?v=EZ05e7EMOLM)
