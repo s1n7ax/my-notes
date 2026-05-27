@@ -91,22 +91,21 @@ Red-Green-Refactor:
 
 **Pros**
 
+- Forces you to think about the interface before the implementation
 - Tests act as living documentation — they show exactly what the code is supposed to do
 - Gives confidence to refactor without breaking existing behaviour
-- Forces you to think about the interface before the implementation
 
 **Cons**
 
-- Hard to apply to UI, databases, and external APIs without extra tooling
 - Can give false confidence if tests only cover happy paths
 
 ---
 
 ## TDD Best Practices
 
-- Reduce mocking and stubbing
-- Avoid testing private/internal code; focus on public interfaces
-- Avoid Over-Testing
+- Never write code without a failing test: You may only write new production code to pass a unit test that has already failed.
+- Write minimal tests: Do not write more of a test than is necessary to fail. Compilation failures are considered test failures.
+- Code to pass: Write exactly the amount of production code needed to satisfy the failing test, not more.
 
 ---
 
