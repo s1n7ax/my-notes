@@ -87,29 +87,18 @@ Red-Green-Refactor:
 
 ---
 
-## Live Refactoring
+## Pros and Cons of TDD
 
-### Refactor 1 — `fail()` helper
+**Pros**
 
-- Extract `const fail = message => ({ valid: false, message })`
-- Replace all four return sites
-- Run tests — still green
+- Tests act as living documentation — they show exactly what the code is supposed to do
+- Gives confidence to refactor without breaking existing behaviour
+- Forces you to think about the interface before the implementation
 
-### Refactor 2 — Extract `getViolations()`
+**Cons**
 
-- Extract `getViolations(password)` that collects error strings into an array
-- `validatePassword` wraps the result
-- Run tests — still green
-- Point out: `getViolations` now has one job and is independently testable
-
-### Refactor 3 — Collect all errors (KEY MOMENT)
-
-- New requirement: show all errors at once, not just the first
-- Update the tests first — change expected shape to `{ valid: false, errors: [...] }`
-- Run tests — RED (tests drive the change)
-- Update implementation to return all violations
-- Run tests — GREEN
-- Point out: the test changed before the implementation — TDD handles requirement changes the same way it handles new code
+- Hard to apply to UI, databases, and external APIs without extra tooling
+- Can give false confidence if tests only cover happy paths
 
 ---
 
