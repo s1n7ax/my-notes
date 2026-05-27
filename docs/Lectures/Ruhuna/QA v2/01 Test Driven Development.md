@@ -3,7 +3,7 @@
 By Srinesh Nisala
 
 - [LinkedIn](https://www.linkedin.com/in/srinesh-nisala/)
-- [GitHub](https://github.com/s1n7ax)
+- [Github](https://github.com/s1n7ax)
 
 ---
 
@@ -51,36 +51,24 @@ describe('password', () => {
 npm test
 ```
 
-### Write All Tests First
+### Exercise
 
-- Create `password.js` and `password.test.js`
-- Write a test: short password returns `{ valid: false }`
-- Write a test: 8-char password returns `{ valid: true }`
-- Write a test: password with no uppercase returns `{ valid: false }`
-- Write a test: password with no digit returns `{ valid: false }`
-- Write a test: password with no special character returns `{ valid: false }`
-- Run all tests — show all RED
-
-### Exercise 1 — Minimum length
-
-- Implement minimum code: check `password.length >= 8`
-- Run tests — first two GREEN, rest still RED
-
-### Exercise 2 — Uppercase
-
-- Add the uppercase check (`/[A-Z]/`)
-- Run tests — show GREEN
-
-### Exercise 3 — Digit
-
-- Add the digit check (`/[0-9]/`)
-- Run tests — show GREEN
-
-### Exercise 4 — Special character
-
-- Add the special character check (`/[^a-zA-Z0-9]/`)
-- Run tests — all GREEN
-- Point out the smell: `{ valid: false, message }` repeated four times
+1. Create `password.js` and `password.test.js`
+2. Write a test: short password returns `{ valid: false }`
+3. Write a test: 8-char password returns `{ valid: true }`
+4. Write a test: password with no uppercase returns `{ valid: false }`
+5. Write a test: password with no digit returns `{ valid: false }`
+6. Write a test: password with no special character returns `{ valid: false }`
+7. Run all tests — show all RED
+8. Implement minimum code: check `password.length >= 8`
+9. Run tests — first two GREEN, rest still RED
+10. Add the uppercase check (`/[A-Z]/`)
+11. Run tests — show GREEN
+12. Add the digit check (`/[0-9]/`)
+13. Run tests — show GREEN
+14. Add the special character check (`/[^a-zA-Z0-9]/`)
+15. Run tests — all GREEN
+16. Point out the smell: `{ valid: false, message }` repeated four times
 
 ---
 
@@ -114,9 +102,7 @@ npm test
 - Avoid testing private/internal code; focus on public interfaces
 - Avoid over-testing
 
----
-
-## 4. References
+### 4. References
 
 - [TDD, Where Did It All Go Wrong](https://www.youtube.com/watch?v=EZ05e7EMOLM)
 - [Jim Coplien and Bob Martin Debate TDD](https://www.youtube.com/watch?v=KtHQGs3zFAM)
