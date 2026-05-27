@@ -27,47 +27,48 @@ npm test
 
 ## Basics of Vitest
 
-- Show what a test file looks like — `it()` and `expect()`
+- Show what a test file looks like — `describe()`, `it()` and `expect()`
 - Write a simple passing test to confirm the setup works
-- Introduce `beforeEach` and `afterEach`
 
 ---
 
-## Exercise 1
+## Write all tests first
 
 - Create `password.js` and `password.test.js`
 - Write a test: short password returns `{ valid: false }`
 - Write a test: 8-char password returns `{ valid: true }`
-- Run tests — show RED
-- Implement minimum code: check `password.length >= 8`
-- Run tests — show GREEN
-
----
-
-## Exercise 2
-
 - Write a test: password with no uppercase returns `{ valid: false }`
-- Run tests — show RED
-- Add the uppercase check
-- Run tests — show GREEN
-
----
-
-## Exercise 3
-
 - Write a test: password with no digit returns `{ valid: false }`
-- Run tests — show RED
-- Add the digit check
+- Write a test: password with no special character returns `{ valid: false }`
+- Run all tests — show all RED
+
+---
+
+## Exercise 1 — Minimum length
+
+- Implement minimum code: check `password.length >= 8`
+- Run tests — first two GREEN, rest still RED
+
+---
+
+## Exercise 2 — Uppercase
+
+- Add the uppercase check (`/[A-Z]/`)
 - Run tests — show GREEN
 
 ---
 
-## Exercise 4
+## Exercise 3 — Digit
 
-- Write a test: password with no special character returns `{ valid: false }`
-- Run tests — show RED
-- Add the special character check
+- Add the digit check (`/[0-9]/`)
 - Run tests — show GREEN
+
+---
+
+## Exercise 4 — Special character
+
+- Add the special character check (`/[^a-zA-Z0-9]/`)
+- Run tests — all GREEN
 - Point out the smell: `{ valid: false, message }` repeated four times
 
 ---
