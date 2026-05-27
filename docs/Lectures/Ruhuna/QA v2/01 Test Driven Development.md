@@ -93,16 +93,12 @@ Red-Green-Refactor:
 
 - Catches bugs early — tests fail the moment a regression is introduced
 - Encourages small, focused functions that are easy to test and reason about
-- Tests act as living documentation — they show exactly what the code is supposed to do
-- Gives confidence to refactor without breaking existing behaviour
 - Forces you to think about the interface before the implementation
 
 **Cons**
 
 - Slower to start — writing tests upfront takes more time initially
 - Hard to apply to UI, databases, and external APIs without extra tooling
-- Tests can become a maintenance burden if written at the wrong level of abstraction
-- Can give false confidence if tests only cover happy paths
 
 ---
 
