@@ -141,11 +141,15 @@ One function or class in isolation.
 
 ![Unit test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/unit-test-example-from-ms-calculator.png)
 
+_Source: MS Calculator_
+
 ### Integration — _Developer_
 
 Several units working together.
 
 ![Integration test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/integration-test-example-from-neovim.png)
+
+_Source: Neovim_
 
 ### Smoke — _QA_
 
@@ -153,11 +157,15 @@ Several units working together.
 
 ![Smoke test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/smoke-test-example-from-vscode.png)
 
+_Source: VS Code_
+
 ### Performance — _QA_
 
 Speed and responsiveness under normal use.
 
 ![Performance test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/performance-test-from-chrome-lighthouse-for-google.png)
+
+_Source: Chrome Lighthouse (google.com)_
 
 ### Load — _QA_
 
@@ -165,11 +173,15 @@ Behaviour under heavy/concurrent traffic.
 
 ![Load test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/load-test-example-from-Anton-Putra-youtube.png)
 
+_Source: Anton Putra (YouTube)_
+
 ### Security — _Security / QA_
 
 Vulnerabilities and misuse.
 
 ![Security test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/security-test-example-with-zap.png)
+
+_Source: OWASP ZAP_
 
 ### End-to-End — _QA_
 
@@ -177,11 +189,15 @@ A whole user journey across the system.
 
 ![E2E test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/e2e-test-example-from-peertube.png)
 
+_Source: PeerTube_
+
 ### UI — _QA_
 
 The interface behaves and looks right.
 
 ![UI test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/ui-test-example-from-meteor.png)
+
+_Source: Meteor_
 
 ### API — _QA_
 
@@ -189,11 +205,15 @@ Endpoints honour their contract.
 
 ![API test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/api-test-example-from-jsonplaceholder.png)
 
+_Source: JSONPlaceholder_
+
 ### Visual regression — _QA_
 
 The UI didn't change pixels unexpectedly.
 
 ![Visual regression test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/visual-regression-test-example-from-resemblejs.png)
+
+_Source: Resemble.js_
 
 > **Functional**, **regression**, and **acceptance** testing describe **intent**, not a tool — any of
 > the tests above can serve those goals depending on what you're checking.
