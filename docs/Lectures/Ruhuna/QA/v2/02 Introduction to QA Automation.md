@@ -7,10 +7,10 @@ author: By Srinesh Nisala
 
 > All automation is written in **JavaScript** and runs in **GitHub Codespaces** — no local setup.
 
-What automated testing is, the three **interfaces** we write tests through (unit, API, UI), and the
-**types** of tests you'll hear about in industry.
+This lecture covers what automated testing is, the three **interfaces** we write tests through
+(functions, API, UI), and the **types** of tests you'll hear about in industry.
 
-Repo: **https://github.com/s1n7ax/lecture-intro-to-qa-automation**
+Repo: **https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2** · [old lecture notes](https://github.com/s1n7ax/lecture-intro-to-qa-automation)
 
 ---
 
@@ -50,16 +50,10 @@ ASSERT   check the result is what you expected
 
 ## 2. The three interfaces (hands-on)
 
-We write automation at three levels, from fastest to most realistic — the **testing pyramid**: many
-cheap unit tests at the bottom, few slow UI tests at the top.
+We write automation against three **interfaces**, from fastest to most realistic: a **function**
+(call it directly), an **API** (over HTTP), and the **UI** (drive a real browser).
 
-```
-        ▲   UI tests        (slow, realistic) ── Playwright
-       ╱ ╲  API tests       (fast, backend)   ── fetch + Vitest
-      ╱___╲ Unit tests      (instant, logic)  ── Vitest
-```
-
-### 2a. Unit testing — `Vitest`
+### 2a. Functions — `Vitest`
 
 Test a **pure function** directly, no browser or network. The code under test (`src/cart.js`):
 
@@ -91,7 +85,7 @@ it('rejects a discount above 100%', () => {
 
 **Takeaway:** unit tests are fast and precise — they pinpoint the exact function that's wrong.
 
-### 2b. API testing — `fetch` + `Vitest`
+### 2b. API — `fetch` + `Vitest`
 
 Skip the UI and test the **backend contract** over HTTP, against the public
 **[Swagger Petstore](https://petstore.swagger.io/)**. APIs describe themselves with an
@@ -111,7 +105,7 @@ it('GET /pet/findByStatus returns a list of available pets (200)', async () => {
 
 **Takeaway:** API tests are fast and don't depend on the UI — ideal for business logic and contracts.
 
-### 2c. UI testing — `Playwright`
+### 2c. UI — `Playwright`
 
 Drive a **real browser** like a user, using **[Playwright](https://playwright.dev/)** against
 **[the-internet.herokuapp.com](https://the-internet.herokuapp.com/login)**. Playwright **auto-waits**
@@ -146,61 +140,61 @@ tool. Many are automated through the same three interfaces above.
 
 One function or class in isolation.
 
-![Unit test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation/raw/main/assets/unit-test-example-from-ms-calculator.png)
+![Unit test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/unit-test-example-from-ms-calculator.png)
 
 ### Integration — *Developer*
 
 Several units working together.
 
-![Integration test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation/raw/main/assets/integration-test-example-from-neovim.png)
+![Integration test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/integration-test-example-from-neovim.png)
 
 ### Smoke — *QA*
 
 "Does the build even launch?"
 
-![Smoke test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation/raw/main/assets/smoke-test-example-from-vscode.png)
+![Smoke test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/smoke-test-example-from-vscode.png)
 
 ### Performance — *QA*
 
 Speed and responsiveness under normal use.
 
-![Performance test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation/raw/main/assets/performance-test-from-chrome-lighthouse-for-google.png)
+![Performance test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/performance-test-from-chrome-lighthouse-for-google.png)
 
 ### Load — *QA*
 
 Behaviour under heavy/concurrent traffic.
 
-![Load test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation/raw/main/assets/load-test-example-from-Anton-Putra-youtube.png)
+![Load test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/load-test-example-from-Anton-Putra-youtube.png)
 
 ### Security — *Security / QA*
 
 Vulnerabilities and misuse.
 
-![Security test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation/raw/main/assets/security-test-example-with-zap.png)
+![Security test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/security-test-example-with-zap.png)
 
 ### End-to-End — *QA*
 
 A whole user journey across the system.
 
-![E2E test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation/raw/main/assets/e2e-test-example-from-peertube.png)
+![E2E test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/e2e-test-example-from-peertube.png)
 
 ### UI — *QA*
 
 The interface behaves and looks right.
 
-![UI test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation/raw/main/assets/ui-test-example-from-meteor.png)
+![UI test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/ui-test-example-from-meteor.png)
 
 ### API — *QA*
 
 Endpoints honour their contract.
 
-![API test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation/raw/main/assets/api-test-example-from-jsonplaceholder.png)
+![API test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/api-test-example-from-jsonplaceholder.png)
 
 ### Visual regression — *QA*
 
 The UI didn't change pixels unexpectedly.
 
-![Visual regression test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation/raw/main/assets/visual-regression-test-example-from-resemblejs.png)
+![Visual regression test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/visual-regression-test-example-from-resemblejs.png)
 
 > **Functional**, **regression**, and **acceptance** testing describe **intent**, not a tool — any of
 > the tests above can serve those goals depending on what you're checking.
@@ -224,11 +218,10 @@ You've seen a **valid** login test. Now write one for an **invalid** login (**ne
 
 - A test is always **arrange → act → assert**.
 - We automate through three **interfaces**, trading speed for realism:
-  - **Unit** (Vitest) — instant, isolates logic.
+  - **Functions** (Vitest) — instant, isolates logic.
   - **API** (fetch + Vitest) — fast, checks the backend contract.
   - **UI** (Playwright) — realistic, drives a real browser.
 - Test **types** (unit, integration, smoke, performance, security, …) describe *what & why*.
-- Prefer **many** unit tests and **few** UI tests (the testing pyramid).
 
 ### Go further
 - Vitest — https://vitest.dev/
