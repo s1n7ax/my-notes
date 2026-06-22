@@ -141,7 +141,7 @@ One function or class in isolation.
 
 ![Unit test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/unit-test-example-from-ms-calculator.png)
 
-_Source: MS Calculator_
+_Source: [MS Calculator](https://github.com/microsoft/calculator/blob/09a39a500e5b3dd2778df58d8ddc61e652246a24/src/CalculatorUnitTests/DateCalculatorUnitTests.cpp?plain=1#L997-L1017)_
 
 ### Integration — _Developer_
 
@@ -149,7 +149,7 @@ Several units working together.
 
 ![Integration test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/integration-test-example-from-neovim.png)
 
-_Source: Neovim_
+_Source: [Neovim](https://github.com/neovim/neovim/blob/dde2cc65fd2ac89ad88b19df08dc03cf1da50316/test/functional/plugin/lsp/diagnostic_spec.lua?plain=1#L127-L154)_
 
 ### Smoke — _QA_
 
@@ -157,7 +157,7 @@ _Source: Neovim_
 
 ![Smoke test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/smoke-test-example-from-vscode.png)
 
-_Source: VS Code_
+_Source: [VS Code](https://github.com/microsoft/vscode/blob/6fb1f6fbdd167ca4599f6ad28323257c3704a777/test/smoke/src/areas/extensions/extensions.test.ts?plain=1#L15-L25)_
 
 ### Performance — _QA_
 
@@ -173,7 +173,7 @@ Behaviour under heavy/concurrent traffic.
 
 ![Load test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/load-test-example-from-Anton-Putra-youtube.png)
 
-_Source: Anton Putra (YouTube)_
+_Source: [Anton Putra (YouTube)](https://github.com/antonputra/tutorials/blob/5098b4b9738a920a8a5708f7721faa843449855f/lessons/145/tests/go-app-1.js?plain=1#L4-L31)_
 
 ### Security — _Security / QA_
 
@@ -189,7 +189,7 @@ A whole user journey across the system.
 
 ![E2E test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/e2e-test-example-from-peertube.png)
 
-_Source: PeerTube_
+_Source: [PeerTube](https://github.com/Chocobozzz/PeerTube/blob/0b145cfc9ac2eebd3ca922a7e38cf000e7e75348/client/e2e/src/suites-local/signup.e2e-spec.ts?plain=1#L322-L407)_
 
 ### UI — _QA_
 
@@ -197,7 +197,7 @@ The interface behaves and looks right.
 
 ![UI test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/ui-test-example-from-meteor.png)
 
-_Source: Meteor_
+_Source: [Meteor](https://github.com/meteor/e2e/blob/8e74741f46e14d8918399144fa22692002ebab02/specs/auth/email.js?plain=1#L15-L26)_
 
 ### API — _QA_
 
@@ -205,7 +205,7 @@ Endpoints honour their contract.
 
 ![API test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/api-test-example-from-jsonplaceholder.png)
 
-_Source: JSONPlaceholder_
+_Source: [json-server](https://github.com/typicode/json-server/blob/6aa56d9581488d9bcd1baf42c4c97b293cd9ee99/src/app.test.ts?plain=1#L109-L128)_
 
 ### Visual regression — _QA_
 
@@ -213,7 +213,7 @@ The UI didn't change pixels unexpectedly.
 
 ![Visual regression test example](https://github.com/s1n7ax/lecture-intro-to-qa-automation-v2/raw/main/assets/visual-regression-test-example-from-resemblejs.png)
 
-_Source: Resemble.js_
+_Source: [Resemble.js](https://github.com/rsmbl/Resemble.js/blob/581c1bb757e3fdd7f151c47ad8ca6eafcce5019a/nodejs-tests/compareImages.test.js?plain=1#L9-L23)_
 
 > **Functional**, **regression**, and **acceptance** testing describe **intent**, not a tool — any of
 > the tests above can serve those goals depending on what you're checking.
