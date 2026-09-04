@@ -98,6 +98,27 @@ const config = {
     ],
   ],
 
+  themes: [
+    [
+      "@easyops-cn/docusaurus-search-local",
+      /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */
+      ({
+        /**
+         * Docs are served from the site root, so the indexer needs the same
+         * route base path the docs preset uses.
+         */
+        docsRouteBasePath: "/",
+        blogRouteBasePath: "/blog",
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: false,
+        hashed: true,
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      }),
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
