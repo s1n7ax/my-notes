@@ -76,6 +76,28 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        /**
+         * Docs moved from /docs/<path> to /<path>. Keep the old URLs alive.
+         */
+        createRedirects(existingPath) {
+          if (existingPath.startsWith("/blog")) {
+            return undefined;
+          }
+
+          if (existingPath === "/") {
+            return ["/docs", "/docs/intro"];
+          }
+
+          return [`/docs${existingPath}`];
+        },
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
