@@ -11,7 +11,11 @@ Coconut Research Institute Sri Lanka, 2022-03-29.
 
 ## 2. Dig the hole
 
-- Sandy loam soil: 3 x 3 feet hole.
+| Soil | Hole size |
+| --- | --- |
+| Sandy loam | 3 x 3 feet |
+| Hard gravel | 4 x 4 feet |
+
 - While digging, keep the soil from the first 1 foot (topsoil) in one pile and the soil
   from below it (bottom soil) in a second pile.
 
@@ -35,6 +39,27 @@ Coconut Research Institute Sri Lanka, 2022-03-29.
 5. Mix the organic fertilizer, YPM and dolomite into the bottom soil.
 6. Fill the hole with that mix until 15 cm from the top are left unfilled. This gap helps
    water move towards the seedling.
+
+```
+                \  |  /
+                 \ | /     seedling
+ _______________\|||/_____________________
+ |               |||                     |
+ |  15 cm left unfilled                  |
+ |_______________________________________|
+ |  5.  bottom soil mixed with organic   |
+ |      fertilizer, YPM and dolomite     |
+ |_______________________________________|
+ |  4.  topsoil - the rest of it         |
+ |=======================================|
+ |  3.  coconut husks, fibre side up     |
+ |_______________________________________|
+ |  2.  topsoil - just enough to cover   |
+ |=======================================|
+ |  1.  coconut husks, fibre side up     |
+ |_______________________________________|
+ <------------- hole width -------------->
+```
 
 ## 5. Plant the seedling
 
