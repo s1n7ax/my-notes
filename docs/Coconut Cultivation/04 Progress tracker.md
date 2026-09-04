@@ -46,7 +46,8 @@ Measure every 3 months. It shows if a plant is doing badly before it looks bad.
 | at planting | Ask the Coconut Development Officer for the fertilizer schedule for the first years, and write it in the section below | - | |
 
 When an action is done, put the date in **Done on**, add a row to the **Event log**, and
-add the next action here.
+add the next action here. If the status of a plant or the next step changed, update the
+table in the [section landing page](index.md) too.
 
 ## Fertilizer plan
 

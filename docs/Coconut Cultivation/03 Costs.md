@@ -66,4 +66,5 @@ Rules printed on the form:
 - `PB` most likely means polybag — the same letters are printed above the seedling type
   table on the handover form. `PP` is still not confirmed. Ask the Eraminigolla office
   and write the answer here.
-- Update **Total so far** and the category table every time a row is added.
+- Update **Total so far** and the category table every time a row is added, and
+  update the **Spent so far** row in the [section landing page](index.md).
