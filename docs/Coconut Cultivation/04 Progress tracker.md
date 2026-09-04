@@ -9,9 +9,9 @@ still log each ID so a single sick plant can be followed later.
 
 | ID | Type | Bought on | From | Planted on | Place in the garden | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| P01 | PP PB | 2026-08-31 | Coconut Cultivation Board, Eraminigolla | not planted yet | - | in polybag |
-| P02 | PP PB | 2026-08-31 | Coconut Cultivation Board, Eraminigolla | not planted yet | - | in polybag |
-| P03 | PP PB | 2026-08-31 | Coconut Cultivation Board, Eraminigolla | not planted yet | - | in polybag |
+| P01 | PP PB (ordinary) | 2026-08-31 | Coconut Cultivation Board, Eraminigolla | not planted yet | - | in polybag |
+| P02 | PP PB (ordinary) | 2026-08-31 | Coconut Cultivation Board, Eraminigolla | not planted yet | - | in polybag |
+| P03 | PP PB (ordinary) | 2026-08-31 | Coconut Cultivation Board, Eraminigolla | not planted yet | - | in polybag |
 
 Status values: `in polybag`, `planted`, `growing`, `sick`, `dead`.
 
@@ -21,7 +21,7 @@ Newest entry at the bottom. One row per action, per plant or per group.
 
 | Date | Plants | Action | Details |
 | --- | --- | --- | --- |
-| 2026-08-31 | P01, P02, P03 | Bought | 3 seedlings, 550 each. See [Costs](03%20Costs.md). |
+| 2026-08-31 | P01, P02, P03 | Bought | 3 seedlings, 550 each, receipt no. 1222070. See [Costs](03%20Costs.md). |
 
 Action values: `Bought`, `Hole dug`, `Planted`, `Fertilizer`, `Watering`, `Mulching`,
 `Pest / disease`, `Measured`, `Other`.
