@@ -108,10 +108,6 @@ const config = {
          * route base path the docs preset uses.
          */
         docsRouteBasePath: "/",
-        blogRouteBasePath: "/blog",
-        indexDocs: true,
-        indexBlog: true,
-        indexPages: false,
         hashed: true,
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
