@@ -14,7 +14,8 @@ costs, and how each plant is doing.
 | Seedlings bought | 3 (`P01`, `P02`, `P03`), type PP PB, ordinary class |
 | Bought on | 2026-08-31, Coconut Cultivation Board, Eraminigolla |
 | Status | still in polybags, not planted yet |
-| Spent so far | LKR 1,650 |
+| Spent so far | LKR 3,150 |
+| Materials in hand | one 40 kg compost bag, bought 2026-09-05 |
 | Next step | dig and fill the holes, then plant the 3 seedlings |
 
 ## Pages
