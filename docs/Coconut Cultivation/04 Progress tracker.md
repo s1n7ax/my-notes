@@ -22,6 +22,7 @@ Newest entry at the bottom. One row per action, per plant or per group.
 | Date | Plants | Action | Details |
 | --- | --- | --- | --- |
 | 2026-08-31 | P01, P02, P03 | Bought | 3 seedlings, 550 each, receipt no. 1222070. See [Costs](03%20Costs.md). |
+| 2026-09-05 | P01, P02, P03 | Bought | Compost fertilizer, one 40 kg bag, 1,500. Not applied yet — kept for filling the holes and for mulching. See [Costs](03%20Costs.md). |
 
 Action values: `Bought`, `Hole dug`, `Planted`, `Fertilizer`, `Watering`, `Mulching`,
 `Pest / disease`, `Measured`, `Other`.
@@ -44,6 +45,7 @@ Measure every 3 months. It shows if a plant is doing badly before it looks bad.
 | before planting | Dig the holes and fill them — see [Planting of coconut seedlings](02%20Planting%20of%20coconut%20seedlings.md) | P01, P02, P03 | |
 | as soon as possible | Plant the 3 seedlings and add mulching | P01, P02, P03 | |
 | at planting | Ask the Coconut Development Officer for the fertilizer schedule for the first years, and write it in the section below | - | |
+| at planting | Use the 40 kg compost bag when filling the holes, and write the amount used per plant in the Event log | P01, P02, P03 | |
 
 When an action is done, put the date in **Done on**, add a row to the **Event log**, and
 add the next action here. If the status of a plant or the next step changed, update the
