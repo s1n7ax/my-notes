@@ -7,7 +7,7 @@ All amounts in LKR. Add one row per purchase. Keep the receipt number when there
 | # | Date | Item | Details | Qty | Unit price | Total | Place | Receipt |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | 2026-08-31 | Coconut seedlings | Type on the papers: `PP PB`, class `සාමාන්‍ය` (ordinary). Season 2026 Yala. | 3 | 550 | 1,650 | Coconut Cultivation Board, Eraminigolla | Cash receipt no. 1222070 |
-| 2 | 2026-09-05 | Compost fertilizer | 40 kg bag. Not applied yet — for filling the holes and for mulching at planting. Place and receipt not written down yet. | 1 | 1,500 | 1,500 | - | - |
+| 2 | 2026-09-05 | Compost fertilizer | 40 kg bag. Not applied yet — for filling the holes and for mulching at planting. No receipt kept. | 1 | 1,500 | 1,500 | Fertilizer shop in the market (name not known) | - |
 
 **Total so far: 3,150**
 
@@ -64,8 +64,8 @@ Rules printed on the form:
 
 ## Notes
 
-- Fill in the shop name and the receipt number for the compost bag (row 2) when the
-  bill is found.
+- The compost bag (row 2) was bought from a fertilizer shop in the market. Write down
+  the shop name on the next visit, so the price can be compared later.
 - `PB` most likely means polybag — the same letters are printed above the seedling type
   table on the handover form. `PP` is still not confirmed. Ask the Eraminigolla office
   and write the answer here.
