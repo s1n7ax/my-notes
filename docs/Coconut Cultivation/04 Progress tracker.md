@@ -22,6 +22,7 @@ Newest entry at the bottom. One row per action, per plant or per group.
 | Date | Plants | Action | Details |
 | --- | --- | --- | --- |
 | 2026-08-31 | P01, P02, P03 | Bought | 3 seedlings, 550 each, receipt no. 1222070. See [Costs](03%20Costs.md). |
+| 2026-09-07 | P01, P02 | Hole dug | Excavator, 1.5 hours at 3,300/h. See [Costs](03%20Costs.md). |
 | 2026-09-08 | P01, P02 | Planted | Planted in the prepared holes. See [Photos](#photos). |
 | 2026-09-08 | P01 | Mulching | Ring of coconut husks around the plant. |
 | 2026-09-08 | P02 | Mulching | Dry banana leaves around the plant. |
@@ -60,7 +61,7 @@ Measure every 3 months. It shows if a plant is doing badly before it looks bad.
 
 | Due | What | Plants | Done on |
 | --- | --- | --- | --- |
-| before planting | Dig the holes and fill them — see [Planting of coconut seedlings](02%20Planting%20of%20coconut%20seedlings.md) | P01, P02, P03 | 2026-09-08 for P01, P02 |
+| before planting | Dig the holes and fill them — see [Planting of coconut seedlings](02%20Planting%20of%20coconut%20seedlings.md) | P01, P02, P03 | 2026-09-07 for P01, P02 |
 | as soon as possible | Plant the seedlings and add mulching | P01, P02, P03 | 2026-09-08 for P01, P02 |
 | as soon as possible | Dig the hole, plant P03 and add mulching | P03 | |
 | every few days until the plant settles | Water P01 and P02 | P01, P02 | |
