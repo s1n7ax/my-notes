@@ -26,6 +26,7 @@ Newest entry at the bottom. One row per action, per plant or per group.
 | 2026-09-08 | P01, P02 | Planted | Planted in the prepared holes. See [Photos](#photos). |
 | 2026-09-08 | P01 | Mulching | Ring of coconut husks around the plant. |
 | 2026-09-08 | P02 | Mulching | Dry banana leaves around the plant. |
+| 2026-09-08 | P01, P02 | Other | Cut plastic barrel put around each plant as a guard, dug 2-3 inches into the soil. |
 
 Action values: `Bought`, `Hole dug`, `Planted`, `Fertilizer`, `Watering`, `Mulching`,
 `Pest / disease`, `Measured`, `Other`.
@@ -49,6 +50,39 @@ coconut husks.
 The seedling near mother's home, by the side of the road to mother's house. Mulched with
 dry banana leaves.
 
+## How the holes were made and filled
+
+This is what was actually done, which is not the same as the guide in
+[Planting of coconut seedlings](02%20Planting%20of%20coconut%20seedlings.md).
+
+Same for both holes:
+
+- Hole size: 4 x 4 feet.
+- 3 layers of coconut husks (the guide says 2).
+- More than 20 kg of compost per hole (the guide says 10 kg to 12 kg).
+- Old grass that was removed from the land was put on top of the coconut husks, as a
+  filler. This means less soil has to go back into the hole.
+- Only 2 seedlings could be planted in one day. Plan one more day for `P03`.
+
+Where the YPM and dolomite went:
+
+| Plant | Layer that got YPM + dolomite | Depth of that layer from the top |
+| --- | --- | --- |
+| P01 | top 4 to 6 inches | at the top |
+| P02 | about 8 inches thick | starts about 1 foot down from the top |
+
+For `P02`, a mix of bottom soil and compost was put on top of the YPM + dolomite layer.
+
+## Barrel guard
+
+A cut plastic barrel was put around each seedling to protect it from wild pigs and
+porcupine (`ඉත්තෑවා`). The barrel could only be dug 2-3 inches into the soil. It is not
+known yet if this is deep enough — the animals may push it over or dig under it.
+
+Check the barrels after every animal visit and write what happened in the **Event log**.
+If 2-3 inches is not enough, the options are to dig the barrel deeper or to put stones
+around its base.
+
 ## Growth measurements
 
 Measure every 3 months. It shows if a plant is doing badly before it looks bad.
@@ -63,7 +97,8 @@ Measure every 3 months. It shows if a plant is doing badly before it looks bad.
 | --- | --- | --- | --- |
 | before planting | Dig the holes and fill them — see [Planting of coconut seedlings](02%20Planting%20of%20coconut%20seedlings.md) | P01, P02, P03 | 2026-09-07 for P01, P02 |
 | as soon as possible | Plant the seedlings and add mulching | P01, P02, P03 | 2026-09-08 for P01, P02 |
-| as soon as possible | Dig the hole, plant P03 and add mulching | P03 | |
+| as soon as possible | Dig the hole, plant P03 and add mulching. Keep one full day for it — only 2 plants fit in a day | P03 | |
+| after the next animal visit | Check if the barrel guard at 2-3 inches deep holds against wild pigs and porcupine | P01, P02 | |
 | every few days until the plant settles | Water P01 and P02 | P01, P02 | |
 | at planting | Ask the Coconut Development Officer for the fertilizer schedule for the first years, and write it in the section below | - | |
 

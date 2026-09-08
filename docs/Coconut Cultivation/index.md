@@ -31,3 +31,5 @@ costs, and how each plant is doing.
 
 - What does `PP` mean on the seedling papers? Ask the Eraminigolla office.
 - What is the fertilizer schedule for a young palm? Ask the Coconut Development Officer.
+- Is a barrel guard dug only 2-3 inches into the soil enough against wild pigs and
+  porcupine? See [Barrel guard](04%20Progress%20tracker.md#barrel-guard).
