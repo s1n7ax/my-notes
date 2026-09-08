@@ -8,8 +8,9 @@ All amounts in LKR. Add one row per purchase. Keep the receipt number when there
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | 2026-08-31 | Coconut seedlings | Type on the papers: `PP PB`, class `සාමාන්‍ය` (ordinary). Season 2026 Yala. | 3 | 550 | 1,650 | Coconut Cultivation Board, Eraminigolla | Cash receipt no. 1222070 |
 | 2 | 2026-09-07 | Hole digging | Excavator hired to dig the planting holes. 1.5 hours of work. | 1.5 h | 3,300 / h | 4,950 | Home garden | - |
+| 3 | before 2026-09-07 | Coconut husks | About 300 husks. The 1,000 was one payment for the husks **and** the transport. Exact date not written down. | ~300 | - | 1,000 | From Anuradha, brought by him | - |
 
-**Total so far: 6,600**
+**Total so far: 7,600**
 
 ## Cost by category
 
@@ -19,13 +20,13 @@ All amounts in LKR. Add one row per purchase. Keep the receipt number when there
 | Land / hole digging | 4,950 |
 | Organic fertilizer | 0 |
 | YPM / dolomite | 0 |
-| Coconut husks | 0 |
+| Coconut husks | 1,000 |
 | Water / irrigation | 0 |
 | Tools | 0 |
 | Transport | 0 |
 | Labour | 0 |
 | Other | 0 |
-| **All** | **6,600** |
+| **All** | **7,600** |
 
 ## Papers
 
