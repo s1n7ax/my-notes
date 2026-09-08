@@ -22,7 +22,10 @@ Newest entry at the bottom. One row per action, per plant or per group.
 | Date | Plants | Action | Details |
 | --- | --- | --- | --- |
 | 2026-08-31 | P01, P02, P03 | Bought | 3 seedlings, 550 each, receipt no. 1222070. See [Costs](03%20Costs.md). |
-| 2026-09-07 | P01, P02 | Hole dug | Excavator, 1.5 hours at 3,300/h. See [Costs](03%20Costs.md). |
+| 2026-09-05 | P01, P02, P03 | Bought | Compost fertilizer, one 40 kg bag, 1,500. See [Costs](03%20Costs.md). |
+| 2026-09-07 | P01, P02, P03 | Bought | About 300 coconut husks from Anuradha, 1,000 with the transport. See [Costs](03%20Costs.md). |
+| 2026-09-07 | P01, P02 | Hole dug | Excavator, 1.5 hours at 3,300/h. Holes are 4 x 4 feet. See [Costs](03%20Costs.md). |
+| 2026-09-08 | P01, P02 | Fertilizer | More than 20 kg of compost per hole, mixed into the fill. YPM and dolomite also mixed in — the layers are different for each plant, see [How the holes were made and filled](#how-the-holes-were-made-and-filled). |
 | 2026-09-08 | P01, P02 | Planted | Planted in the prepared holes. See [Photos](#photos). |
 | 2026-09-08 | P01 | Mulching | Ring of coconut husks around the plant. |
 | 2026-09-08 | P02 | Mulching | Dry banana leaves around the plant. |
@@ -101,6 +104,8 @@ Measure every 3 months. It shows if a plant is doing badly before it looks bad.
 | after the next animal visit | Check if the barrel guard at 2-3 inches deep holds against wild pigs and porcupine | P01, P02 | |
 | every few days until the plant settles | Water P01 and P02 | P01, P02 | |
 | at planting | Ask the Coconut Development Officer for the fertilizer schedule for the first years, and write it in the section below | - | |
+| at planting | Use the 40 kg compost bag when filling the holes, and write the amount used per plant in the Event log | P01, P02, P03 | 2026-09-08 for P01, P02 |
+| before planting P03 | Check what is left of the compost and the 300 coconut husks. Each hole took more than 20 kg of compost and 3 layers of husks | P03 | |
 
 When an action is done, put the date in **Done on**, add a row to the **Event log**, and
 add the next action here. If the status of a plant or the next step changed, update the
