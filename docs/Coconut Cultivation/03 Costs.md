@@ -10,8 +10,10 @@ All amounts in LKR. Add one row per purchase. Keep the receipt number when there
 | 2 | 2026-09-05 | Compost fertilizer | 40 kg bag. Used when filling the holes of `P01` and `P02`. No receipt kept. | 1 | 1,500 | 1,500 | Fertilizer shop in the market (name not known) | - |
 | 3 | 2026-09-07 | Hole digging | Excavator hired to dig the planting holes. 1.5 hours of work. | 1.5 h | 3,300 / h | 4,950 | Home garden | - |
 | 4 | 2026-09-07 | Coconut husks | About 300 husks. The 1,000 was one payment for the husks **and** the transport. | ~300 | - | 1,000 | From Anuradha, brought by him | - |
+| 5 | 2026-09-09 | Alkathene pipe | 200 feet. To carry waste water from the bathroom and the kitchen to the plants. | 200 ft | 24 / ft | 4,800 | not written down | - |
+| 6 | 2026-09-09 | Pipe sockets and fittings | Sockets and other small parts for the waste water line. | 1 lot | - | 4,235 | not written down | - |
 
-**Total so far: 9,100**
+**Total so far: 18,135**
 
 ## Cost by category
 
@@ -22,12 +24,12 @@ All amounts in LKR. Add one row per purchase. Keep the receipt number when there
 | Organic fertilizer | 1,500 |
 | YPM / dolomite | 0 |
 | Coconut husks | 1,000 |
-| Water / irrigation | 0 |
+| Water / irrigation | 9,035 |
 | Tools | 0 |
 | Transport | 0 |
 | Labour | 0 |
 | Other | 0 |
-| **All** | **9,100** |
+| **All** | **18,135** |
 
 ## Papers
 
@@ -68,6 +70,8 @@ Rules printed on the form:
 
 - The compost bag (row 2) was bought from a fertilizer shop in the market. Write down
   the shop name on the next visit, so the price can be compared later.
+- The pipe and the fittings (rows 5 and 6) are for the waste water line. The shop name
+  was not written down. Write it here on the next visit.
 - `PB` most likely means polybag — the same letters are printed above the seedling type
   table on the handover form. `PP` is still not confirmed. Ask the Eraminigolla office
   and write the answer here.
