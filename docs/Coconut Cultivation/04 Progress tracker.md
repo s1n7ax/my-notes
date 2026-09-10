@@ -11,7 +11,7 @@ still log each ID so a single sick plant can be followed later.
 | --- | --- | --- | --- | --- | --- | --- |
 | P01 | PP PB (ordinary) | 2026-08-31 | Coconut Cultivation Board, Eraminigolla | 2026-09-08 | Closest to the main concrete road | planted |
 | P02 | PP PB (ordinary) | 2026-08-31 | Coconut Cultivation Board, Eraminigolla | 2026-09-08 | Near mother's home, by the side of the road to mother's house | planted |
-| P03 | PP PB (ordinary) | 2026-08-31 | Coconut Cultivation Board, Eraminigolla | not planted yet | - | in polybag |
+| P03 | PP PB (ordinary) | 2026-08-31 | Coconut Cultivation Board, Eraminigolla | 2026-09-10 | Close to Asanka's house and to the concrete road | planted |
 
 Status values: `in polybag`, `planted`, `growing`, `sick`, `dead`.
 
@@ -31,6 +31,8 @@ Newest entry at the bottom. One row per action, per plant or per group.
 | 2026-09-08 | P02 | Mulching | Dry banana leaves around the plant. |
 | 2026-09-08 | P01, P02 | Other | Cut plastic barrel put around each plant as a guard, dug 2-3 inches into the soil. |
 | 2026-09-09 | P01, P02, P03 | Bought | 200 feet alkathene pipe (4,800) and sockets and fittings (4,235) for the waste water line. See [Costs](03%20Costs.md) and [Watering with waste water](#watering-with-waste-water). |
+| 2026-09-10 | P03 | Fertilizer | Dolomite, YPM and compost mixed into the top 4 to 6 inches of soil only. Amounts not recorded. See [How the holes were made and filled](#how-the-holes-were-made-and-filled). |
+| 2026-09-10 | P03 | Planted | Hole about 3 feet deep, so only 2 layers of coconut husks. Gravel soil with many more rocks than the other two holes. |
 
 Action values: `Bought`, `Hole dug`, `Planted`, `Fertilizer`, `Watering`, `Mulching`,
 `Pest / disease`, `Measured`, `Other`.
@@ -59,7 +61,7 @@ dry banana leaves.
 This is what was actually done, which is not the same as the guide in
 [Planting of coconut seedlings](02%20Planting%20of%20coconut%20seedlings.md).
 
-Same for both holes:
+Same for the `P01` and `P02` holes:
 
 - Hole size: 4 x 4 feet.
 - 3 layers of coconut husks (the guide says 2).
@@ -74,8 +76,15 @@ Where the YPM and dolomite went:
 | --- | --- | --- |
 | P01 | top 4 to 6 inches | at the top |
 | P02 | about 8 inches thick | starts about 1 foot down from the top |
+| P03 | top 4 to 6 inches (compost too) | at the top |
 
 For `P02`, a mix of bottom soil and compost was put on top of the YPM + dolomite layer.
+
+The `P03` hole (planted 2026-09-10) was different:
+
+- Depth: about 3 feet, so there was room for only 2 layers of coconut husks.
+- Dolomite, YPM and compost went only into the top 4 to 6 inches of soil.
+- The gravel soil had many more rocks than the `P01` and `P02` holes.
 
 ## Barrel guard
 
@@ -121,11 +130,13 @@ Measure every 3 months. It shows if a plant is doing badly before it looks bad.
 
 | Due | What | Plants | Done on |
 | --- | --- | --- | --- |
-| before planting | Dig the holes and fill them — see [Planting of coconut seedlings](02%20Planting%20of%20coconut%20seedlings.md) | P01, P02, P03 | 2026-09-07 for P01, P02 |
-| as soon as possible | Plant the seedlings and add mulching | P01, P02, P03 | 2026-09-08 for P01, P02 |
-| as soon as possible | Dig the hole, plant P03 and add mulching. Keep one full day for it — only 2 plants fit in a day | P03 | |
+| before planting | Dig the holes and fill them — see [Planting of coconut seedlings](02%20Planting%20of%20coconut%20seedlings.md) | P01, P02, P03 | 2026-09-07 for P01, P02; by 2026-09-10 for P03 |
+| as soon as possible | Plant the seedlings and add mulching | P01, P02, P03 | 2026-09-08 for P01, P02; 2026-09-10 for P03 |
+| as soon as possible | Dig the hole, plant P03 and add mulching. Keep one full day for it — only 2 plants fit in a day | P03 | 2026-09-10 |
+| if not done at planting | Mulch P03 and put a barrel guard around it, then add a row to the Event log | P03 | |
 | after the next animal visit | Check if the barrel guard at 2-3 inches deep holds against wild pigs and porcupine | P01, P02 | |
-| every few days until the plant settles | Water P01 and P02 | P01, P02 | |
+| every few days until the plant settles | Water the seedlings | P01, P02, P03 | |
+| next few weeks | Watch P03 closely — shallower hole, fertilizer only in the top 4 to 6 inches, and rocky gravel soil | P03 | |
 | as soon as possible | Lay the 200 feet alkathene pipe and connect the bathroom and kitchen waste water line — see [Watering with waste water](#watering-with-waste-water) | P01, P02, P03 | |
 | when the line is laid | Ask the Coconut Development Officer how much soap and detergent water is safe for a young palm | - | |
 | at planting | Ask the Coconut Development Officer for the fertilizer schedule for the first years, and write it in the section below | - | |
