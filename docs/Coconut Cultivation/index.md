@@ -14,9 +14,9 @@ costs, and how each plant is doing.
 | Seedlings bought | 3 (`P01`, `P02`, `P03`), type PP PB, ordinary class |
 | Bought on | 2026-08-31, Coconut Cultivation Board, Eraminigolla |
 | Status | P01 and P02 planted on 2026-09-08, P03 still in the polybag |
-| Spent so far | LKR 9,100 |
-| Materials in hand | the 40 kg compost bag went into the P01 and P02 holes; what is left of the ~300 coconut husks is not counted yet |
-| Next step | plant P03, and water P01 and P02 until they settle |
+| Spent so far | LKR 18,135 |
+| Materials in hand | the 40 kg compost bag went into the P01 and P02 holes; what is left of the ~300 coconut husks is not counted yet; 200 feet of alkathene pipe and fittings, not laid yet |
+| Next step | plant P03, water P01 and P02 until they settle, and lay the waste water pipe line |
 
 ## Pages
 
@@ -26,7 +26,7 @@ costs, and how each plant is doing.
   instruction set: place, hole size, materials, how to fill the hole, how to plant.
 - [Costs](03%20Costs.md) — every purchase, the totals by category, and the receipts.
 - [Progress tracker](04%20Progress%20tracker.md) — one row per plant, event log, growth
-  measurements, next actions and the fertilizer plan.
+  measurements, the waste water watering plan, next actions and the fertilizer plan.
 
 ## Open questions
 
@@ -34,3 +34,5 @@ costs, and how each plant is doing.
 - What is the fertilizer schedule for a young palm? Ask the Coconut Development Officer.
 - Is a barrel guard dug only 2-3 inches into the soil enough against wild pigs and
   porcupine? See [Barrel guard](04%20Progress%20tracker.md#barrel-guard).
+- How much bathroom and kitchen waste water is safe for a young palm? See [Watering with
+  waste water](04%20Progress%20tracker.md#watering-with-waste-water).

@@ -30,6 +30,7 @@ Newest entry at the bottom. One row per action, per plant or per group.
 | 2026-09-08 | P01 | Mulching | Ring of coconut husks around the plant. |
 | 2026-09-08 | P02 | Mulching | Dry banana leaves around the plant. |
 | 2026-09-08 | P01, P02 | Other | Cut plastic barrel put around each plant as a guard, dug 2-3 inches into the soil. |
+| 2026-09-09 | P01, P02, P03 | Bought | 200 feet alkathene pipe (4,800) and sockets and fittings (4,235) for the waste water line. See [Costs](03%20Costs.md) and [Watering with waste water](#watering-with-waste-water). |
 
 Action values: `Bought`, `Hole dug`, `Planted`, `Fertilizer`, `Watering`, `Mulching`,
 `Pest / disease`, `Measured`, `Other`.
@@ -86,6 +87,28 @@ Check the barrels after every animal visit and write what happened in the **Even
 If 2-3 inches is not enough, the options are to dig the barrel deeper or to put stones
 around its base.
 
+## Watering with waste water
+
+The plan is to water the plants with the waste water from the bathroom and the kitchen,
+instead of carrying water by hand. This is grey water, not toilet water.
+
+Bought for it on 2026-09-09 (see [Costs](03%20Costs.md)):
+
+- 200 feet of alkathene pipe — 4,800
+- sockets and other fittings — 4,235
+
+Not done yet: the pipe is not laid and the line is not connected.
+
+Things to keep in mind when the line is laid:
+
+- Send the water to the mulch ring around the plant, not straight onto the stem.
+- Kitchen water carries oil and food bits. It can block the pipe. Plan a simple trap or
+  filter that can be cleaned.
+- Soap and detergent water is not good for the plant in large amounts. Ask the Coconut
+  Development Officer (see [Contacts](01%20Contacts.md)) how much is safe.
+- Do not let water stand around the plant. Standing water rots the roots and breeds
+  mosquitoes.
+
 ## Growth measurements
 
 Measure every 3 months. It shows if a plant is doing badly before it looks bad.
@@ -103,6 +126,8 @@ Measure every 3 months. It shows if a plant is doing badly before it looks bad.
 | as soon as possible | Dig the hole, plant P03 and add mulching. Keep one full day for it — only 2 plants fit in a day | P03 | |
 | after the next animal visit | Check if the barrel guard at 2-3 inches deep holds against wild pigs and porcupine | P01, P02 | |
 | every few days until the plant settles | Water P01 and P02 | P01, P02 | |
+| as soon as possible | Lay the 200 feet alkathene pipe and connect the bathroom and kitchen waste water line — see [Watering with waste water](#watering-with-waste-water) | P01, P02, P03 | |
+| when the line is laid | Ask the Coconut Development Officer how much soap and detergent water is safe for a young palm | - | |
 | at planting | Ask the Coconut Development Officer for the fertilizer schedule for the first years, and write it in the section below | - | |
 | at planting | Use the 40 kg compost bag when filling the holes, and write the amount used per plant in the Event log | P01, P02, P03 | 2026-09-08 for P01, P02 |
 | before planting P03 | Check what is left of the compost and the 300 coconut husks. Each hole took more than 20 kg of compost and 3 layers of husks | P03 | |
