@@ -33,6 +33,7 @@ Newest entry at the bottom. One row per action, per plant or per group.
 | 2026-09-09 | P01, P02, P03 | Bought | 200 feet alkathene pipe (4,800) and sockets and fittings (4,235) for the waste water line. See [Costs](03%20Costs.md) and [Watering with waste water](#watering-with-waste-water). |
 | 2026-09-10 | P03 | Fertilizer | Dolomite, YPM and compost mixed into the top 4 to 6 inches of soil only. Amounts not recorded. See [How the holes were made and filled](#how-the-holes-were-made-and-filled). |
 | 2026-09-10 | P03 | Planted | Hole about 3 feet deep, so only 2 layers of coconut husks. Gravel soil with many more rocks than the other two holes. |
+| 2026-09-16 | two next plants (not bought yet) | Bought | YPM-W 2.5 kg (550), dolomite 2 kg (40) and a second 40 kg compost bag (1,500). The YPM and dolomite are exactly the per-hole amounts from the guide, for 2 holes. See [Costs](03%20Costs.md). |
 
 Action values: `Bought`, `Hole dug`, `Planted`, `Fertilizer`, `Watering`, `Mulching`,
 `Pest / disease`, `Measured`, `Other`.
@@ -138,6 +139,8 @@ Measure every 3 months. It shows if a plant is doing badly before it looks bad.
 | every few days until the plant settles | Water the seedlings | P01, P02, P03 | |
 | next few weeks | Watch P03 closely — shallower hole, fertilizer only in the top 4 to 6 inches, and rocky gravel soil | P03 | |
 | as soon as possible | Lay the 200 feet alkathene pipe and connect the bathroom and kitchen waste water line — see [Watering with waste water](#watering-with-waste-water) | P01, P02, P03 | |
+| as soon as possible | Buy the 2 more seedlings the YPM-W, dolomite and second compost bag were bought for, then give them IDs `P04` and `P05` in the **Plants** table | P04, P05 | |
+| before the next planting | Write down the shop name for the YPM-W, the dolomite and the second compost bag | - | |
 | when the line is laid | Ask the Coconut Development Officer how much soap and detergent water is safe for a young palm | - | |
 | at planting | Ask the Coconut Development Officer for the fertilizer schedule for the first years, and write it in the section below | - | |
 | at planting | Use the 40 kg compost bag when filling the holes, and write the amount used per plant in the Event log | P01, P02, P03 | 2026-09-08 for P01, P02 |

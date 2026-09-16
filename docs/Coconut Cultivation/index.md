@@ -14,9 +14,9 @@ costs, and how each plant is doing.
 | Seedlings bought | 3 (`P01`, `P02`, `P03`), type PP PB, ordinary class |
 | Bought on | 2026-08-31, Coconut Cultivation Board, Eraminigolla |
 | Status | P01 and P02 planted on 2026-09-08, P03 planted on 2026-09-10 |
-| Spent so far | LKR 18,135 |
-| Materials in hand | the 40 kg compost bag went into the P01 and P02 holes; what is left of the ~300 coconut husks is not counted yet; 200 feet of alkathene pipe and fittings, not laid yet |
-| Next step | water all 3 seedlings until they settle, and lay the waste water pipe line |
+| Spent so far | LKR 23,600 |
+| Materials in hand | 2.5 kg YPM-W, 2 kg dolomite and a second 40 kg compost bag, bought 2026-09-16 for two more plants; the first 40 kg compost bag went into the P01 and P02 holes; what is left of the ~300 coconut husks is not counted yet; 200 feet of alkathene pipe and fittings (waste water line), not laid yet; pipe equipment (sockets, tap) for watering seedlings, bought 2026-09-16 |
+| Next step | water all 3 seedlings until they settle, lay the waste water pipe line, and buy the 2 more seedlings |
 
 ## Pages
 

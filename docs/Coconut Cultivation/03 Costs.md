@@ -12,8 +12,12 @@ All amounts in LKR. Add one row per purchase. Keep the receipt number when there
 | 4 | 2026-09-07 | Coconut husks | About 300 husks. The 1,000 was one payment for the husks **and** the transport. | ~300 | - | 1,000 | From Anuradha, brought by him | - |
 | 5 | 2026-09-09 | Alkathene pipe | 200 feet. To carry waste water from the bathroom and the kitchen to the plants. | 200 ft | 24 / ft | 4,800 | not written down | - |
 | 6 | 2026-09-09 | Pipe sockets and fittings | Sockets and other small parts for the waste water line. | 1 lot | - | 4,235 | not written down | - |
+| 7 | 2026-09-16 | YPM-W | Young palm mixture, wet zone. 2.5 kg = 1,250 g x 2 plants, the amount the guide gives per hole. Bought for the two next plants. | 2.5 kg | 220 / kg | 550 | not written down | - |
+| 8 | 2026-09-16 | Dolomite | 2 kg = 1 kg x 2 plants, the amount the guide gives per hole. Bought for the two next plants. | 2 kg | 20 / kg | 40 | not written down | - |
+| 9 | 2026-09-16 | Compost fertilizer | Second 40 kg bag. For the two next plants. Same price as the first bag (row 2). | 1 | 1,500 | 1,500 | not written down | - |
+| 10 | 2026-09-16 | Pipe equipment | Sockets, tap & stuff for watering coconut seedlings. | 1 lot | - | 3,375 | not written down | - |
 
-**Total so far: 18,135**
+**Total so far: 23,600**
 
 ## Cost by category
 
@@ -21,15 +25,15 @@ All amounts in LKR. Add one row per purchase. Keep the receipt number when there
 | --- | --- |
 | Seedlings | 1,650 |
 | Land / hole digging | 4,950 |
-| Organic fertilizer | 1,500 |
-| YPM / dolomite | 0 |
+| Organic fertilizer | 3,000 |
+| YPM / dolomite | 590 |
 | Coconut husks | 1,000 |
-| Water / irrigation | 9,035 |
+| Water / irrigation | 12,410 |
 | Tools | 0 |
 | Transport | 0 |
 | Labour | 0 |
 | Other | 0 |
-| **All** | **18,135** |
+| **All** | **23,600** |
 
 ## Papers
 
@@ -72,6 +76,11 @@ Rules printed on the form:
   the shop name on the next visit, so the price can be compared later.
 - The pipe and the fittings (rows 5 and 6) are for the waste water line. The shop name
   was not written down. Write it here on the next visit.
+- The YPM-W, the dolomite and the second compost bag (rows 7, 8 and 9) were bought for
+  two more plants that are not bought yet. The shop names were not written down. Write
+  them here on the next visit.
+- The YPM and the dolomite used on `P01`, `P02` and `P03` were never entered here — the
+  price and the amount are not known. Find out and add a row for them.
 - `PB` most likely means polybag — the same letters are printed above the seedling type
   table on the handover form. `PP` is still not confirmed. Ask the Eraminigolla office
   and write the answer here.
