@@ -15,8 +15,9 @@ All amounts in LKR. Add one row per purchase. Keep the receipt number when there
 | 7 | 2026-09-16 | YPM-W | Young palm mixture, wet zone. 2.5 kg = 1,250 g x 2 plants, the amount the guide gives per hole. Bought for the two next plants. | 2.5 kg | 220 / kg | 550 | not written down | - |
 | 8 | 2026-09-16 | Dolomite | 2 kg = 1 kg x 2 plants, the amount the guide gives per hole. Bought for the two next plants. | 2 kg | 20 / kg | 40 | not written down | - |
 | 9 | 2026-09-16 | Compost fertilizer | Second 40 kg bag. For the two next plants. Same price as the first bag (row 2). | 1 | 1,500 | 1,500 | not written down | - |
+| 10 | 2026-09-16 | Pipe equipment | Sockets, tap & stuff for watering coconut seedlings. | 1 lot | - | 3,375 | not written down | - |
 
-**Total so far: 20,225**
+**Total so far: 23,600**
 
 ## Cost by category
 
@@ -27,12 +28,12 @@ All amounts in LKR. Add one row per purchase. Keep the receipt number when there
 | Organic fertilizer | 3,000 |
 | YPM / dolomite | 590 |
 | Coconut husks | 1,000 |
-| Water / irrigation | 9,035 |
+| Water / irrigation | 12,410 |
 | Tools | 0 |
 | Transport | 0 |
 | Labour | 0 |
 | Other | 0 |
-| **All** | **20,225** |
+| **All** | **23,600** |
 
 ## Papers
 
