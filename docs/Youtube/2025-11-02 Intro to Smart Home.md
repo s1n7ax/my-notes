@@ -109,6 +109,7 @@ A Zigbee coordinator is a device that acts as a hub for your Zigbee network.
   - No PC?
     - Tuya ZigBee 3.0 Multimode Gateway
   - Got PC?
+    - SONOFF ZBDongle-M (recommended)
     - SONOFF ZBDongle
     - SLZB-06 ([Check this issue](https://github.com/Koenkk/zigbee2mqtt/issues/17809))
 
@@ -117,6 +118,16 @@ A Zigbee coordinator is a device that acts as a hub for your Zigbee network.
 #### Tuya ZigBee 3.0 Multimode Gateway
 
 ![tuya](../../assets/2025-11-02-14-15-41.png)
+
+---
+
+#### SONOFF ZBDongle-M (recommended)
+
+![sonoff zbdongle-m](../../assets/sonoff-zbdongle-m.jpg)
+
+- Zigbee 3.0 + Thread/Matter multiprotocol (EFR32MG21)
+- Works with Zigbee2MQTT and ZHA
+- More memory/range than the ZBDongle-E, handles larger networks
 
 ---
 
