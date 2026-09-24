@@ -16,14 +16,15 @@ All amounts in LKR. Add one row per purchase. Keep the receipt number when there
 | 8 | 2026-09-16 | Dolomite | 2 kg = 1 kg x 2 plants, the amount the guide gives per hole. Bought for the two next plants. | 2 kg | 20 / kg | 40 | not written down | - |
 | 9 | 2026-09-16 | Compost fertilizer | Second 40 kg bag. For the two next plants. Same price as the first bag (row 2). | 1 | 1,500 | 1,500 | not written down | - |
 | 10 | 2026-09-16 | Pipe equipment | Sockets, tap & stuff for watering coconut seedlings. | 1 lot | - | 3,375 | not written down | - |
+| 11 | 2026-10-?? | Coconut seedlings | Ordered from Pradeep, Deliwala Agrarian Development Officer. Expected next month. | 2 | 400 | 800 | Deliwala | - |
 
-**Total so far: 23,600**
+**Total so far: 24,400**
 
 ## Cost by category
 
 | Category | Total |
 | --- | --- |
-| Seedlings | 1,650 |
+| Seedlings | 2,450 |
 | Land / hole digging | 4,950 |
 | Organic fertilizer | 3,000 |
 | YPM / dolomite | 590 |
@@ -33,7 +34,7 @@ All amounts in LKR. Add one row per purchase. Keep the receipt number when there
 | Transport | 0 |
 | Labour | 0 |
 | Other | 0 |
-| **All** | **23,600** |
+| **All** | **24,400** |
 
 ## Papers
 
