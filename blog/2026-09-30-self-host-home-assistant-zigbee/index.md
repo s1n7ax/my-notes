@@ -27,15 +27,20 @@ If you want the background first — WiFi vs Zigbee, which coordinator to buy, w
 ## What we are building
 
 ```text
-+-----------------+     Zigbee radio      +--------------------+    USB serial (/dev/serial/by-id/...)    +----------------------+      HTTP :8123      +-----+
+                         Zigbee radio                                USB serial (/dev/serial/by-id/...)                                  HTTP :8123
++-----------------+                       +--------------------+                                           +----------------------+                      +-----+
 | Zigbee device   | <-------------------> | USB Coordinator    | <---------------------------------------> | Home Assistant       | <------------------> | You |
-| plug / sensor   |       2.4 GHz         | SONOFF ZBDongle-P  |            stable device path           | Docker container+ZHA |      browser       |     |
-+-----------------+                       +--------------------+                                         +----------------------+                      +-----+
+| plug / sensor   |        2.4 GHz        | SONOFF ZBDongle-P  |             stable device path            | Docker container+ZHA |       browser        |     |
++-----------------+                       +--------------------+                                           +----------------------+                      +-----+
 ```
 
 - **Home Assistant** is the brain (dashboards, automations)
 - **ZHA** (Zigbee Home Automation) is the built-in Home Assistant integration that talks to the coordinator
 - No MQTT, no Zigbee2MQTT, no cloud in this tutorial — simplest working stack
+
+> [!NOTE] New to Docker? ELI5 version
+> Think of Docker like a lunchbox. Home Assistant needs a bunch of stuff to run — the right tools, the right setup, the right versions. Docker packs all of that into one sealed lunchbox (called a **container**) so it runs exactly the same on your PC, my PC, or any old laptop.
+> You don't install Home Assistant piece by piece. You just say "run this lunchbox" and Docker handles it. The `docker-compose.yml` file in this project is just a one-line order slip: which lunchbox to run, which USB stick to hand it, and where to store its data so it remembers things after a restart.
 
 ## Step 1 — Get the project
 
