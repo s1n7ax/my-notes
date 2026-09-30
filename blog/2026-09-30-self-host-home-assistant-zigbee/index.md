@@ -17,7 +17,7 @@ If you want the background first — WiFi vs Zigbee, which coordinator to buy, w
 - A PC with Linux installed + Docker installed and running
   - Any old laptop, mini PC, or desktop with 4GB+ RAM works
   - Verify Docker: `docker --version && docker compose version`
-- A Zigbee 3.0 USB coordinator (I use the SONOFF Dongle-M, ZBDongle-P/E also fine)
+- A Zigbee 3.0 USB coordinator (I use the SONOFF ZBDongle-P, Dongle-M/E also fine)
 - At least one Zigbee device (smart plug is the best first device — easy + acts as a mesh router)
 - A USB extension cable (highly recommended — keeps the coordinator away from USB 3.0 / SSD / PC case interference)
 
@@ -27,7 +27,10 @@ If you want the background first — WiFi vs Zigbee, which coordinator to buy, w
 ## What we are building
 
 ```text
-Zigbee device <--radio--> USB Coordinator <--/dev/serial/by-id/...--> Home Assistant (Docker) <--browser--> You
++-----------------+     Zigbee radio      +--------------------+    USB serial (/dev/serial/by-id/...)    +----------------------+      HTTP :8123      +-----+
+| Zigbee device   | <-------------------> | USB Coordinator    | <---------------------------------------> | Home Assistant       | <------------------> | You |
+| plug / sensor   |       2.4 GHz         | SONOFF ZBDongle-P  |            stable device path           | Docker container+ZHA |      browser       |     |
++-----------------+                       +--------------------+                                         +----------------------+                      +-----+
 ```
 
 - **Home Assistant** is the brain (dashboards, automations)
