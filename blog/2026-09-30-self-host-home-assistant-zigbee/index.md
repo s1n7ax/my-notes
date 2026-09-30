@@ -1,6 +1,6 @@
 ---
 slug: self-host-home-assistant-zigbee
-title: 'Self-Host Home Assistant + Zigbee Smart Home (Full Tutorial)'
+title: "Self-Host Home Assistant + Zigbee Smart Home (Full Tutorial)"
 authors: s1n7ax
 tags: [self-hosted, home-assistant, zigbee, docker, youtube]
 description: Self-host Home Assistant with Docker and build a local Zigbee smart home - coordinator setup, stable device path, ZHA pairing, and your first device.
@@ -17,7 +17,7 @@ If you want the background first — WiFi vs Zigbee, which coordinator to buy, w
 - A PC with Linux installed + Docker installed and running
   - Any old laptop, mini PC, or desktop with 4GB+ RAM works
   - Verify Docker: `docker --version && docker compose version`
-- A Zigbee 3.0 USB coordinator (I use the SONOFF ZBDongle-P, Dongle-M/E also fine)
+- A Zigbee 3.0 USB coordinator (I use the SONOFF ZBDongle-P in this tutorial)
 - At least one Zigbee device (smart plug is the best first device — easy + acts as a mesh router)
 - A USB extension cable (highly recommended — keeps the coordinator away from USB 3.0 / SSD / PC case interference)
 
@@ -158,13 +158,13 @@ Suggested first test:
 
 ## Troubleshooting
 
-| Symptom | Fix |
-| --- | --- |
-| `by-id` empty | Different port/cable, check `dmesg`, extension cable away from USB 3 |
-| HA starts but ZHA fails | Wrong device path, device busy, restart container |
-| Device won't pair | Reset device to pairing mode again, bring it within 1–2m of coordinator, try again |
-| Device drops off | Add a mains-powered Zigbee plug between coordinator and device — it acts as a router and strengthens the mesh |
-| Can't open `:8123` | `docker compose ps` / `logs`, firewall, use LAN IP from phone |
+| Symptom                 | Fix                                                                                                           |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `by-id` empty           | Different port/cable, check `dmesg`, extension cable away from USB 3                                          |
+| HA starts but ZHA fails | Wrong device path, device busy, restart container                                                             |
+| Device won't pair       | Reset device to pairing mode again, bring it within 1–2m of coordinator, try again                            |
+| Device drops off        | Add a mains-powered Zigbee plug between coordinator and device — it acts as a router and strengthens the mesh |
+| Can't open `:8123`      | `docker compose ps` / `logs`, firewall, use LAN IP from phone                                                 |
 
 ## Next steps
 
