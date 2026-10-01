@@ -81,6 +81,15 @@ usb-Silicon_Labs_Sonoff_Zigbee_3.0_USB_Dongle_Plus_0001-if00-port0
 > [!NOTE]
 > Always use the `/dev/serial/by-id/...` path, not `/dev/ttyUSB0`. `ttyUSB0` can change to `ttyUSB1` on reboot or when you plug in another USB device. The `by-id` path is tied to the hardware and does not change.
 
+> [!WARNING]
+> Disable ModemManager — it probes USB serial devices on plug-in and will grab the Zigbee coordinator, causing ZHA pairing failures / device disconnects.
+>
+> ```bash
+> sudo systemctl disable --now ModemManager
+> ```
+>
+> Verify it's stopped: `systemctl status ModemManager`. If you actually need ModemManager (e.g. WWAN modem on the same machine), keep it and add a udev ignore rule for the coordinator instead.
+
 If `ls /dev/serial/by-id/` is empty:
 
 - Try another USB port / cable
@@ -160,16 +169,6 @@ Suggested first test:
 
 - Plug a lamp into the smart plug → toggle from Home Assistant → toggle from the physical button on the plug → confirm both states sync
 - Then build one automation: **Settings → Automations → Create** (e.g. plug turns on at sunset)
-
-## Troubleshooting
-
-| Symptom                 | Fix                                                                                                           |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `by-id` empty           | Different port/cable, check `dmesg`, extension cable away from USB 3                                          |
-| HA starts but ZHA fails | Wrong device path, device busy, restart container                                                             |
-| Device won't pair       | Reset device to pairing mode again, bring it within 1–2m of coordinator, try again                            |
-| Device drops off        | Add a mains-powered Zigbee plug between coordinator and device — it acts as a router and strengthens the mesh |
-| Can't open `:8123`      | `docker compose ps` / `logs`, firewall, use LAN IP from phone                                                 |
 
 ## Next steps
 
