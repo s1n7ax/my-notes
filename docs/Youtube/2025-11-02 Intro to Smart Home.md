@@ -2,34 +2,29 @@
 
 ---
 
-## What we are actually building
-
-- A light/plug/sensor you can control **without** the vendor's cloud
-- Stuff that keeps working when the internet is down
-- Automations - "if motion and it's dark, turn on the light"
-
-> [!NOTE]
-> Buying a smart bulb is not a smart home. Owning the brain is.
-
----
-
-## Cheapest way to get started
+## ☁️ Easiest start: WiFi devices that depend on the vendor cloud
 
 ### Prerequisites
 
 > [!NOTE]
-> WiFi network should be 2.4GHz not 5GHz
+> This approach needs:
+>
+> - A 2.4GHz WiFi network, not 5GHz
+> - A working internet connection 🌐
+> - The vendor app and cloud service to stay online
 
-- Buy WiFi device
-- Install the (what ever they say we should use) app on mobile
-- Follow the instructions in manual to connect the device
+- Buy a WiFi device
+- Install the app they tell you to use on your phone
+- Follow the manual to connect the device
 
 > [!WARNING]
-> I don't use these apps nor trust them
+> I neither use nor trust this setup
 >
-> - Device talks to a server in another country to turn on a bulb 2 meters away
-> - Vendor can kill the app/cloud any day and your hardware becomes e-waste
-> - It's fine to start here. Just don't build the whole house on it
+> - Your device talks to some remote server just to switch on a bulb a couple of meters away
+> - If your internet is down, setup may fail and the device may stop responding properly
+> - If the vendor app, cloud, or region has issues, your devices can become slow, unreliable, or unusable
+> - The vendor can shut down the app or cloud whenever they want, turning your hardware into e-waste
+> - It's acceptable as a starting point. Just don't build your entire house around it
 
 ---
 
@@ -54,93 +49,97 @@
   - WiFi/Smart switch
   - WiFi/Smart plug
 
-### Brands - what I learned the hard way
+### Brands - lessons learned the hard way
 
 > [!WARNING] Tuya
 >
-> - LED Bulbs get pretty hot, and some of them stopped working after few months
-> - Plug stops working completely or relay stops working after few months
-> - "Tuya" is not really a brand - it's a platform. Same white box, 50 different seller names
+> - LED bulbs run quite hot, and some failed after only a few months
+> - Plugs either die completely or the relay fails after a few months
+> - "Tuya" is not really a brand - it's a platform. You get the same white-label hardware sold under dozens of names
 
 > [!WARNING] Moes
 >
-> - They lie sometimes - Human presence sensor is not a presence sensor
+> - Their labeling is sometimes misleading - a human presence sensor is not always actually a presence sensor
 
 ---
 
 ## WiFi vs Zigbee
 
-For a smart-home network, both Wi-Fi and Zigbee work well - but they shine in very different roles
+For a smart-home setup, both Wi-Fi and Zigbee are useful - but they are good at different things.
 
-|                 | WiFi                 | Zigbee                               |
-| --------------- | -------------------- | ------------------------------------ |
-| Extra hardware  | None                 | Coordinator needed                   |
-| Power draw      | High                 | Very low                             |
-| Battery devices | Bad idea             | Made for it                          |
-| Range           | Router's range       | Mesh - every mains device extends it |
-| Device count    | Router starts crying | Hundreds                             |
-| Bandwidth       | High (camera/audio)  | Tiny (on/off, sensor values)         |
+|                 | WiFi                | Zigbee                               |
+| --------------- | ------------------- | ------------------------------------ |
+| Extra hardware  | None                | Coordinator required                 |
+| Power draw      | High                | Very low                             |
+| Battery devices | Not a good fit      | Designed for them                    |
+| Range           | Limited to router   | Mesh - every mains device extends it |
+| Device count    | Routers struggle    | Hundreds                             |
+| Bandwidth       | High (camera/audio) | Tiny (on/off, sensor values)         |
 
 ### Recommendation
 
-Use both
+Use both.
 
-- **Zigbee** - everything battery powered (sensors, buttons, door contacts) and wall switches
-- **WiFi** - cameras, speakers, anything that moves real data
+- **Zigbee** - battery-powered devices (sensors, buttons, door contacts) and wall switches
+- **WiFi** - speakers and other devices that move real data
+- **Network cable / PoE** - cameras, whenever possible
 
 > [!NOTE]
 >
-> - Zigbee also uses 2.4 GHz so to reduce interference by selecting channels that are not used by WiFi
-> - WiFi 1 / 6 / 11 -> pick Zigbee 15, 20, 25 or 26
-> - Every **mains powered** Zigbee device is a router and makes the mesh stronger. Battery devices never repeat
+> - Zigbee also operates on 2.4 GHz, so reduce interference by choosing channels that do not overlap with WiFi
+> - If WiFi uses 1 / 6 / 11, choose Zigbee 15, 20, 25, or 26
+> - Every **mains-powered** Zigbee device acts as a router and strengthens the mesh. Battery devices do not repeat
 
 > [!TIP]
 > Before buying anything, search the model name on
 > [Zigbee2MQTT supported devices](https://www.zigbee2mqtt.io/supported-devices/) and
-> [Blakadder](https://zigbee.blakadder.com/). If it's not there, you may be on your own
+> [Blakadder](https://zigbee.blakadder.com/). If it is missing from both, you're probably on your own
 
 ---
 
 ## Zigbee Coordinator
 
-A Zigbee coordinator is a device that acts as a hub for your Zigbee network.
+A Zigbee coordinator is the hub device for your Zigbee network.
 
 ### Types of Zigbee Coordinators
 
 > [!NOTE]
 >
-> - There are different versions of Zigbee coordinators. Buy the 3.0 version (latest)
+> - Zigbee coordinators come in different versions. Buy the 3.0 version, which is the latest
 
-- Which coordinator to buy?
+- Which coordinator should you buy?
   - No PC?
-    - Tuya ZigBee 3.0 Multimode Gateway - cheapest, but cloud
-  - Got PC?
-    - **SONOFF Dongle-M (dual antenna)** - This is the one I recommend
-    - SLZB-06 - Ethernet/PoE, only if the server is a bad spot for a radio. It did not work for me - see below
+    - Tuya ZigBee 3.0 Multimode Gateway - cheapest option, but cloud-based and internet-dependent 🌐
+  - Have a PC?
+    - **SONOFF Dongle-M (dual antenna)** - this is the one I recommend
+    - Other simple USB Zigbee 3.0 dongles are also worth considering before jumping to an SLZB-06
+    - SLZB-06 - Ethernet/PoE, only worth it if your server is in a terrible location for radio. It did not work for me - see below
 
 > [!WARNING]
-> Keep the coordinator away from the USB 3.0 ports / SSD / the PC case. USB 3 noise kills 2.4GHz.
-> Use a USB extension cable - this fixes most "Zigbee is unstable" complaints
+> Keep the coordinator away from USB 3.0 ports, SSDs, and the PC case. USB 3 noise wrecks 2.4GHz.
+> Use a USB extension cable - that solves most "Zigbee is unstable" complaints
 
 ---
 
-#### Tuya ZigBee 3.0 Multimode Gateway
+#### ☁️ Tuya ZigBee 3.0 Multimode Gateway (vendor cloud required)
 
 ![tuya gateway top](../../assets/2025-11-02-14-15-55.jpg)
 
-- Cheapest way in, no PC needed
-- But it's a **cloud** gateway - back to the vendor app
-- Buy this only if you are not going to run Home Assistant
+- Cheapest way to get started, no PC required
+- But it is a **cloud** gateway - so you're back to the vendor app
+- Needs internet and the vendor service to stay up 🌐
+- If the internet or vendor cloud has issues, pairing, control, and automations may break
+- Buy this only if you do not plan to run Home Assistant
 
 ---
 
-#### Tuya gateway - ports and pairing button
+#### ☁️ Tuya cloud gateway - ports and pairing button
 
 ![tuya gateway side - USB-C power and pairing button](../../assets/2025-11-02-14-16-02.jpg)
 
 ---
 
-#### Tuya gateway - product shot
+#### ☁️ Tuya cloud gateway - product shot
 
 ![tuya](../../assets/2025-11-02-14-15-41.png)
 
@@ -150,9 +149,9 @@ A Zigbee coordinator is a device that acts as a hub for your Zigbee network.
 
 ![sonoff plugged into the server](../../assets/2025-11-02-14-16-45.jpeg)
 
-- **ZBDongle-P** (TI CC2652P) - the safe, boring, well supported one
-- **ZBDongle-E** (Silabs EFR32MG21) - newer, was rough on firmware early on
-- Plugs into the PC/server running the software
+- **ZBDongle-P** (TI CC2652P) - the safe, boring, well-supported option
+- **ZBDongle-E** (Silabs EFR32MG21) - newer, but early firmware support was rough
+- Plugs into the PC or server running the software
 
 ---
 
@@ -172,11 +171,11 @@ A Zigbee coordinator is a device that acts as a hub for your Zigbee network.
 
 ![slzb with external antenna](../../assets/2025-11-02-14-17-20.jpg)
 
-- Ethernet / PoE / WiFi / USB - put it in the middle of the house, not next to the server
-- On paper the best placement of the three
+- Ethernet / PoE / WiFi / USB - place it in the middle of the house instead of next to the server
+- On paper, it has the best placement options of the three
 
 > [!WARNING]
-> This did not work for me - devices kept dropping off the network
+> This did not work for me - devices kept falling off the network
 > ([this issue](https://github.com/Koenkk/zigbee2mqtt/issues/17809)). I switched to the SONOFF Dongle-M
 
 ---
@@ -189,15 +188,33 @@ A Zigbee coordinator is a device that acts as a hub for your Zigbee network.
 
 ## The brain
 
-A coordinator is just a radio. Something has to run the logic
+A coordinator is only a radio. Something still has to run the logic.
 
-- [Home Assistant](https://www.home-assistant.io/) - the one I use. Runs on a mini PC, an old laptop, a Pi
+- [Home Assistant](https://www.home-assistant.io/) - what I use. It runs on a mini PC, an old laptop, or a Pi
 - Zigbee integration options:
-  - **Zigbee2MQTT** - widest device support, more control
+  - **Zigbee2MQTT** - broadest device support, more control
   - **ZHA** - built into Home Assistant, less setup
 
 > [!NOTE]
-> Pick one. Running both on the same dongle is not a thing
+> Choose one. Running both on the same dongle is not a real option
+
+### Home Assistant OS vs container setup
+
+You have two normal ways to run Home Assistant:
+
+- **Home Assistant OS** - easiest path. Flash it to a dedicated box and you get the full appliance-style experience, including add-ons and backups from the UI
+- **Docker / Podman / Quadlet** - more flexible if you already have a Linux server and want Home Assistant to live next to the rest of your services
+
+#### My actual configs
+
+I do not run Home Assistant OS. I run the container approach on my Linux server.
+
+If you want to copy my setup, use the actual configs from GitHub:
+
+- [Home Assistant](https://github.com/s1n7ax/nixos/blob/4604e51b0e134a7f3cb1a359f8ad80ce44030cd4/system/home-manager/self-hosted-services/home-assistant.nix)
+- [Mosquitto / MQTT](https://github.com/s1n7ax/nixos/blob/4604e51b0e134a7f3cb1a359f8ad80ce44030cd4/system/home-manager/self-hosted-services/mqtt.nix)
+- [Zigbee2MQTT](https://github.com/s1n7ax/nixos/blob/4604e51b0e134a7f3cb1a359f8ad80ce44030cd4/system/home-manager/self-hosted-services/z2m.nix)
+- [Node-RED](https://github.com/s1n7ax/nixos/blob/4604e51b0e134a7f3cb1a359f8ad80ce44030cd4/system/home-manager/self-hosted-services/node-red.nix)
 
 ---
 
@@ -205,8 +222,8 @@ A coordinator is just a radio. Something has to run the logic
 
 ![home assistant dashboard - cameras and quick access](../../assets/2026-09-22-ha-dashboard-1.png)
 
-- Cameras, lights, AC, water tank - all in one place, no vendor apps
-- Works on the phone the same way it works on the browser
+- Cameras, lights, AC, and the water tank - all in one place, with no vendor apps
+- Works the same on your phone as it does in the browser
 
 ---
 
@@ -218,14 +235,14 @@ A coordinator is just a radio. Something has to run the logic
 
 ### Node-RED
 
-[Node-RED](https://nodered.org/) - drag and drop automations. Install it as a Home Assistant add-on
+[Node-RED](https://nodered.org/) - drag-and-drop automation. Install it as a Home Assistant add-on.
 
-- Home Assistant automations are fine for "if this then that"
-- Node-RED is for the messy ones - loops, delays, retries, branching you can actually see on screen
-- Both can run at the same time. Same devices, different editor
+- Home Assistant automations are fine for simple "if this then that" logic
+- Node-RED is for the ugly stuff - loops, delays, retries, and visible branching
+- You can run both at the same time. Same devices, different editor
 
 > [!NOTE]
-> Not required. Start with Home Assistant automations and only move the ugly ones to Node-RED
+> It is not required. Start with Home Assistant automations and move only the messy ones to Node-RED
 
 ---
 
@@ -234,7 +251,7 @@ A coordinator is just a radio. Something has to run the logic
 ![home assistant automation editor - turn off water pump on overflow](../../assets/2026-09-22-ha-automation.png)
 
 - When / And if / Then do - one trigger, one action, done in a minute
-- Perfect for "flood sensor is wet -> kill the pump"
+- Great for things like "flood sensor is wet -> shut off the pump"
 
 ---
 
@@ -242,10 +259,10 @@ A coordinator is just a radio. Something has to run the logic
 
 ![node-red flow - bathroom lights](../../assets/2026-09-22-node-red-flow.png)
 
-- Same idea, but you can see the whole thing - waits, branches, timers
-- This one is just "bathroom lights": door opened, is anyone inside, wait for motion, wait for
-  door to close, keep lights on 5 minutes
-- Try writing that as a single Home Assistant automation and you will understand why Node-RED exists
+- Same basic idea, but you can see the full flow - waits, branches, timers
+- This one is just for "bathroom lights": door opened, is anyone inside, wait for motion, wait for
+  the door to close, keep the lights on for 5 minutes
+- Try writing that as one Home Assistant automation and you will understand why Node-RED exists
 
 ---
 
@@ -255,9 +272,9 @@ A coordinator is just a radio. Something has to run the logic
 
 ![zigbee door contact sensor - magnet and body](../../assets/2026-09-22-door-sensor.jpg)
 
-- Two parts - body on the frame, magnet on the door. Open/closed, that's it
-- Battery powered, so Zigbee. Lasts a year or more
-- The one automation everyone builds first - door opens, light comes on
+- Two pieces - the body on the frame, the magnet on the door. It only reports open or closed
+- Battery powered, so Zigbee makes sense. Usually lasts a year or longer
+- The first automation most people build - door opens, light turns on
 
 ---
 
@@ -265,13 +282,13 @@ A coordinator is just a radio. Something has to run the logic
 
 ![sonoff zigbee PIR motion sensor in hand](../../assets/2026-09-22-sonoff-motion-sensor.jpg)
 
-- PIR - detects **movement**, not presence. Sit still and it thinks the room is empty
-- Magnetic base, stick it in a corner
-- Pair it with the door sensor so lights stay on while you are actually in the room
+- PIR means it detects **movement**, not presence. Sit still and it assumes the room is empty
+- Magnetic base, easy to stick in a corner
+- Pair it with a door sensor so the lights stay on while you are actually using the room
 
 > [!WARNING]
-> If you want "someone is in the room doing nothing", you need an mmWave presence sensor,
-> not a PIR. And Moes lies about which one they are selling
+> If you need "someone is in the room but not moving," you need an mmWave presence sensor,
+> not a PIR. And Moes is not always honest about which one they are selling
 
 ---
 
@@ -281,10 +298,10 @@ A coordinator is just a radio. Something has to run the logic
 
 ![zigbee smart plug - front socket](../../assets/2026-09-22-zigbee-plug-front.jpg)
 
-- Easiest win - plug it in, no wiring, nothing to switch off at the breaker
-- Most of them report power usage, so you know what your fridge/pump actually costs
-- **Mains powered = Zigbee router**. Buy 2-3 early and your mesh gets stronger for free
-- Check the rated current before you put a water pump or a heater on it (this one is 20A)
+- Easiest upgrade - plug it in, no wiring, nothing to turn off at the breaker
+- Most of them report power usage, so you can see what your fridge or pump actually costs
+- **Mains powered = Zigbee router**. Buy 2-3 early and your mesh improves automatically
+- Check the rated current before using one with a water pump or heater (this one is 20A)
 
 ---
 
@@ -292,13 +309,13 @@ A coordinator is just a radio. Something has to run the logic
 
 ![sonoff mini relay module - N, L Out, L In, S1, S2 terminals](../../assets/2026-09-22-sonoff-mini-relay.jpg)
 
-- Goes **behind** the existing wall switch, inside the back box
-- The physical switch keeps working (S1/S2) and Home Assistant can also control it
-- Best option when you want the room to look normal and still be automated
-- Needs neutral (N) at the switch box - a lot of older houses do not have it
+- Fits **behind** the existing wall switch, inside the back box
+- The physical switch still works (S1/S2), and Home Assistant can control it too
+- Best choice when you want the room to look normal but still be automated
+- Requires neutral (N) in the switch box - many older houses do not have it
 
 > [!WARNING]
-> Mains voltage. If you are not comfortable inside a switch box, get an electrician
+> Mains voltage. If you are not comfortable working inside a switch box, hire an electrician
 
 ---
 
@@ -306,9 +323,9 @@ A coordinator is just a radio. Something has to run the logic
 
 ![aqara zigbee smoke detector](../../assets/2026-09-22-aqara-smoke-detector.jpg)
 
-- Screams locally **and** pushes a notification to your phone
-- This is the one where local control actually matters - it must work when the internet is down
-- Test button on the front, replace it when the firmware says the sensor is end of life
+- Sounds the alarm locally **and** sends a notification to your phone
+- This is where local control really matters - it must still work when the internet is down
+- Test button on the front; replace it when the firmware reports end of life
 
 ---
 
@@ -316,6 +333,6 @@ A coordinator is just a radio. Something has to run the logic
 
 1. Zigbee coordinator (SONOFF Dongle-M, dual antenna)
 2. Home Assistant on anything with 4GB RAM
-3. 2-3 Zigbee smart plugs - they are also mesh routers
+3. 2-3 Zigbee smart plugs - they also act as mesh routers
 4. 1 motion sensor + 1 door sensor
-5. Build one automation you actually use, then grow
+5. Build one automation you will actually use, then expand from there

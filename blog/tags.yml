@@ -17,3 +17,28 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+self-hosted:
+  label: Self-Hosted
+  permalink: /self-hosted
+  description: Self-hosting tutorials
+
+home-assistant:
+  label: Home Assistant
+  permalink: /home-assistant
+  description: Home Assistant guides
+
+zigbee:
+  label: Zigbee
+  permalink: /zigbee
+  description: Zigbee smart home guides
+
+docker:
+  label: Docker
+  permalink: /docker
+  description: Docker guides
+
+youtube:
+  label: YouTube
+  permalink: /youtube
+  description: YouTube video companion posts
